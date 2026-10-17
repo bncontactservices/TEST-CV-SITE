@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV & Portfolio professionnel de Boubacar NDIR - Spécialiste Pilotage Stratégique, Suivi-Évaluation, Data Analytics & IA. APROSI, ex-Afrika Bank, Maarifa Consulting.">
+  <meta name="keywords" content="Boubacar NDIR, Pilotage Stratégique, Suivi-Évaluation, Data Analytics, Intelligence Artificielle, APROSI, Afrika Bank, BDK, Maarifa Consulting, Power BI, Python, R, Stata, Dakar, Sénégal">
+  <meta name="author" content="Boubacar NDIR">
+  <meta name="theme-color" content="#07090e">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Boubacar NDIR | Spécialiste Pilotage Stratégique, Data Analytics & IA">
+  <meta property="og:description" content="Découvrez le profil, les réalisations et les compétences de Boubacar NDIR. Expertise en suivi-évaluation, systèmes décisionnels, gestion des risques et IA.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/boubacar-avatar.png">
+
+  <title>Boubacar NDIR | Spécialiste Pilotage Stratégique, Data Analytics & IA</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambiance Dark Glassmorphism -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob ambient-blob-1"></div>
+    <div class="ambient-blob ambient-blob-2"></div>
+    <div class="ambient-blob ambient-blob-3"></div>
+  </div>
+
+  <!-- Spotlight curseur -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Barre de progression de défilement -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- En-tête & Barre de navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Accueil Boubacar NDIR">
+        <span class="brand-badge">BN</span>
+        <span>Boubacar NDIR</span>
+      </a>
+
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link" data-i18n="navAbout">Profil</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="navExperience">Expériences</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="navSkills">Compétences</a></li>
+          <li><a href="#education" class="nav-link" data-i18n="navEducation">Formation & Certifications</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="navProjects">Systèmes & Outils</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Switcher de Langue -->
+        <button type="button" id="langToggle" class="btn btn-glass btn-sm" aria-label="Changer de langue">
+          EN
+        </button>
+
+        <!-- Téléchargement direct du PDF officiel -->
+        <a href="assets/CV_Boubacar_NDIR.pdf" download="CV_Boubacar_NDIR.pdf" class="btn btn-primary btn-sm" id="downloadPdfBtn" aria-label="Télécharger le CV au format PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span data-i18n="btnDownloadPdf">Télécharger CV</span>
+        </a>
+
+        <!-- Impression / Print Web -->
+        <button type="button" id="printPdfBtn" class="btn btn-glass btn-sm" aria-label="Imprimer le CV">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span data-i18n="btnPrint">Imprimer</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION HERO -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Statut -->
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span data-i18n="heroStatus" data-editable id="heroStatusText">Resp. Suivi-Évaluation @ APROSI • Expert Data & IA</span>
+          </div>
+
+          <!-- Titre exact du CV -->
+          <h1 class="hero-title" data-editable id="heroTitle">
+            Boubacar NDIR<br>
+            <span class="gradient-text" data-i18n="heroTitleRole">Spécialiste Pilotage Stratégique, Data Analytics & IA</span>
+          </h1>
+
+          <!-- Pitch officiel tiré du CV -->
+          <p class="hero-subtitle" data-i18n="heroSubtitle" data-editable id="heroSubtitleText">
+            Consciencieux et dynamique avec une expertise avancée en pilotage stratégique, suivi-évaluation, gestion des risques et systèmes décisionnels. Solide capacité à structurer, coordonner et optimiser des organisations complexes dans des environnements multisectoriels et internationaux.
+          </p>
+
+          <!-- Boutons d'action -->
+          <div class="hero-cta-group">
+            <a href="assets/CV_Boubacar_NDIR.pdf" download="CV_Boubacar_NDIR.pdf" class="btn btn-primary" data-i18n="ctaDownloadCv">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Télécharger mon CV (PDF)</span>
+            </a>
+
+            <a href="#contact" class="btn btn-glass" data-i18n="ctaContact">
+              <span>Me contacter</span>
+            </a>
+
+            <button type="button" class="btn btn-glass copy-email-btn" data-email="boubacarndir7@gmail.com" title="Copier l'email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>boubacarndir7@gmail.com</span>
+            </button>
+          </div>
+
+          <!-- Métriques & Atouts du CV -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-value">Master 2</span>
+              <span class="metric-label" data-i18n="metricM2">Économétrie Appliquée (UADB)</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">Multisectoriel</span>
+              <span class="metric-label" data-i18n="metricSector">Banque • Institutionnel • Bailleurs</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">Data & IA</span>
+              <span class="metric-label" data-i18n="metricData">Power BI • Stata • R • Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo de profil réelle de Boubacar NDIR -->
+        <div class="hero-visual">
+          <div class="avatar-border-glow"></div>
+          <div class="avatar-wrapper" style="border-radius: 50%; width: 340px; height: 340px;">
+            <img src="assets/images/boubacar-photo-officielle.jpg" alt="Photo de Boubacar NDIR" class="avatar-img" width="340" height="340" loading="eager" style="object-fit: cover; object-position: center top; width: 100%; height: 100%;">
+          </div>
+
+          <!-- Badges flottants -->
+          <div class="floating-badge floating-badge-1" aria-hidden="true">
+            <div class="badge-icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <span>Pilotage KPI & Tableaux de bord</span>
+          </div>
+
+          <div class="floating-badge floating-badge-2" aria-hidden="true">
+            <div class="badge-icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"></path>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <span>Suivi-Évaluation & IA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PROFIL & SYNTHÈSE -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="aboutTag">Profil & Vision</span>
+          <h2 class="section-title" data-i18n="aboutTitle">Une expertise transversale et rigoureuse</h2>
+          <p class="section-desc">Du pilotage stratégique de haut niveau à l'analyse statistique pointue et à l'intégration de l'IA.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-panel about-card">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <span>Synthèse Professionnelle</span>
+            </h3>
+            <p class="about-text" data-i18n="aboutText1" data-editable id="aboutText1">
+              Spécialiste en pilotage de la performance institutionnelle, suivi-évaluation (S&E), gestion des risques et modélisation de données.
+            </p>
+            <p class="about-text" data-i18n="aboutText2" data-editable id="aboutText2">
+              J'accompagne les directions générales, institutions bancaires et bailleurs internationaux (GIZ, USAID, Counterpart International, AFD) dans la structuration d'organisations data-driven, la gouvernance de la conformité et l'aide à la décision stratégique.
+            </p>
+          </div>
+
+          <div class="glass-panel about-card">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Points Forts & Valeur Ajoutée</span>
+            </h3>
+            <ul class="value-list">
+              <li class="value-item">
+                <span class="value-bullet">✓</span>
+                <span data-i18n="val1">Pilotage de systèmes de performance institutionnelle & KPI de Direction Générale</span>
+              </li>
+              <li class="value-item">
+                <span class="value-bullet">✓</span>
+                <span data-i18n="val2">Dispositifs de suivi-évaluation complets & évaluations d'impact (Diff-in-Diff)</span>
+              </li>
+              <li class="value-item">
+                <span class="value-bullet">✓</span>
+                <span data-i18n="val3">Gestion des risques opérationnels & financiers, conformité bancaire et contrôle permanent</span>
+              </li>
+              <li class="value-item">
+                <span class="value-bullet">✓</span>
+                <span data-i18n="val4">Modélisation statistique avancée, Business Intelligence (Power BI) et Prompt Engineering IA</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION EXPÉRIENCES PROFESSIONNELLES (DU CV EXACT) -->
+    <section class="section timeline-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="expTag">Parcours Professionnel</span>
+          <h2 class="section-title" data-i18n="expTitle">Expériences Professionnelles</h2>
+          <p class="section-desc">Missions stratégiques, institutions publiques, conseil international et secteur bancaire.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Expérience 1: APROSI -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role" data-editable id="exp1Role">Resp. Suivi-Évaluation</h3>
+                  <div class="timeline-company" data-editable id="exp1Company">APROSI (Agence d'Aménagement et de Promotion des Sites Industriels)</div>
+                </div>
+                <span class="timeline-period" data-editable id="exp1Date">Février 2024 — Présent</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li data-editable id="exp1Ach1">Pilotage du système de performance institutionnelle de l'agence.</li>
+                <li data-editable id="exp1Ach2">Définition et suivi rigoureux des indicateurs stratégiques (KPI).</li>
+                <li data-editable id="exp1Ach3">Élaboration de tableaux de bord exécutifs pour la direction générale.</li>
+                <li data-editable id="exp1Ach4">Appui à la coordination des directions opérationnelles.</li>
+                <li data-editable id="exp1Ach5">Contribution majeure à la modernisation des outils de pilotage institutionnels.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Expérience 2: Maarifa Consulting (2023 - 2024) -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role" data-editable id="exp2Role">Consultant Statisticien / Suivi-Évaluation</h3>
+                  <div class="timeline-company" data-editable id="exp2Company">Maarifa Consulting (ex DataDevAfrica)</div>
+                </div>
+                <span class="timeline-period" data-editable id="exp2Date">2023 — 2024</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li data-editable id="exp2Ach1">Conduite d'évaluations et enquêtes de performance pour de grands bailleurs internationaux : <strong>GIZ, USAID, Counterpart International</strong>.</li>
+                <li data-editable id="exp2Ach2">Mise en place de systèmes de suivi-évaluation complets et adaptés aux programmes.</li>
+                <li data-editable id="exp2Ach3">Analyse approfondie de données et reporting stratégique périodique.</li>
+                <li data-editable id="exp2Ach4">Aide à la décision stratégique pour les bailleurs de fonds et les directions de projets.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Expérience 3: Afrika Bank (ex BDK) -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role" data-editable id="exp3Role">Assistant Direction des Risques, Conformité & Contrôle Permanent</h3>
+                  <div class="timeline-company" data-editable id="exp3Company">Afrika Bank (ex BDK)</div>
+                </div>
+                <span class="timeline-period" data-editable id="exp3Date">2020 — 2022</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li data-editable id="exp3Ach1">Contrôle des opérations de marché et suivi des activités bancaires.</li>
+                <li data-editable id="exp3Ach2">Gestion et surveillance des risques opérationnels et financiers.</li>
+                <li data-editable id="exp3Ach3">Élaboration du reporting réglementaire et renforcement du contrôle interne.</li>
+                <li data-editable id="exp3Ach4">Contribution active à la gouvernance d'entreprise et à la conformité institutionnelle.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Expérience 4: Maarifa Consulting (2020) -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role" data-editable id="exp4Role">Analyste Statisticien</h3>
+                  <div class="timeline-company" data-editable id="exp4Company">Maarifa Consulting (ex DataDevAfrica)</div>
+                </div>
+                <span class="timeline-period" data-editable id="exp4Date">2020</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li data-editable id="exp4Ach1">Collecte, traitement et analyse rigoureuse de données quantitatives et qualitatives.</li>
+                <li data-editable id="exp4Ach2">Construction et calcul d'indicateurs sectoriels de développement et de performance.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION COMPÉTENCES CLÉS (ORGANISÉES EXACTEMENT COMME LE CV) -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="skillsTag">Boîte à Outils & Savoir-Faire</span>
+          <h2 class="section-title" data-i18n="skillsTitle">Domaines de Compétences</h2>
+          <p class="section-desc">Expertises structurées conformément à mon profil en pilotage, data, risques et intelligence artificielle.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Bloc 1: Pilotage stratégique & Performance -->
+          <div class="glass-panel skill-box">
+            <h3 class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+              <span>Pilotage stratégique & Performance</span>
+            </h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Définition et suivi des KPI stratégiques</span><span>98%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 98%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Tableaux de bord exécutifs & reporting décisionnel</span><span>96%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 96%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Management par les résultats</span><span>94%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 94%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Analyse de performance organisationnelle</span><span>95%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bloc 2: Suivi-Évaluation & Projets -->
+          <div class="glass-panel skill-box">
+            <h3 class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+              <span>Suivi-Évaluation & Projets</span>
+            </h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Évaluation d'impact (Diff-in-Diff, randomisation)</span><span>95%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Suivi de projets complexes multi-acteurs</span><span>92%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Coordination interservices & aide à la décision</span><span>96%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 96%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Gestion de projets stratégiques (AFD, GIZ, USAID)</span><span>94%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 94%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bloc 3: Finance, Risques & Gouvernance -->
+          <div class="glass-panel skill-box">
+            <h3 class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>Finance, Risques & Gouvernance</span>
+            </h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Gestion & contrôle des risques opérationnels</span><span>92%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Conformité bancaire & contrôle permanent</span><span>90%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Analyse financière et opérationnelle</span><span>88%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Reporting institutionnel et réglementaire (UMOA)</span><span>94%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 94%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bloc 4: Data, Statistique & Outils -->
+          <div class="glass-panel skill-box">
+            <h3 class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              <span>Data, Statistique & Outils</span>
+            </h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Power BI (Modélisation DAX & Dashboards)</span><span>98%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 98%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Stata, R, Python, SPSS, SAS</span><span>94%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 94%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Économétrie appliquée & statistique avancée</span><span>96%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 96%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>SIG (QGIS, ArcGIS) & MS Office / MS Project</span><span>90%</span></div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bloc 5: Transformation Digitale & IA -->
+          <div class="glass-panel skill-box" style="grid-column: 1 / -1;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+              <div>
+                <h3 class="skill-category-title">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                  <span>Transformation organisationnelle & Digitale</span>
+                </h3>
+                <ul class="value-list">
+                  <li class="value-item"><span class="value-bullet">✓</span><span>Conduite du changement et optimisation des processus</span></li>
+                  <li class="value-item"><span class="value-bullet">✓</span><span>Mise en place d'organisations axées sur les données (data-driven)</span></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="skill-category-title">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                  <span>IA – Intelligence Artificielle</span>
+                </h3>
+                <ul class="value-list">
+                  <li class="value-item"><span class="value-bullet">✓</span><span>Prompt engineering avancé & intégration dans les flux d'analyse</span></li>
+                  <li class="value-item"><span class="value-bullet">✓</span><span>Supports digitaux décisionnels et automatisation de la veille</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION FORMATION & CERTIFICATIONS (DU CV EXACT) -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="eduTag">Parcours Académique & Titres</span>
+          <h2 class="section-title" data-i18n="eduTitle">Formation & Certifications</h2>
+          <p class="section-desc">Diplômes d'État universitaires en économie appliquée et certifications professionnelles reconnues au niveau international.</p>
+        </div>
+
+        <!-- DIPLÔMES UNIVERSITAIRES -->
+        <div style="margin-bottom: 2.5rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: var(--accent-cyan); letter-spacing: 0.05em; text-transform: uppercase;">Formation Universitaire</h3>
+          </div>
+          <div class="edu-diplomas-grid">
+
+            <!-- Master 2 -->
+            <div class="glass-panel edu-diploma-card">
+              <div class="edu-diploma-level">Bac +5</div>
+              <div class="edu-diploma-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="edu-diploma-title">Master 2 Économétrie Appliquée</div>
+              <div class="edu-diploma-subtitle">Économie du Développement</div>
+              <div class="edu-diploma-school">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                Université Alioune Diop de Bambey (UADB)
+              </div>
+              <div class="edu-diploma-desc">Modélisation économétrique avancée, évaluation des politiques de développement, méthodes quantitatives et analyse d'impact.</div>
+              <div class="edu-diploma-tags">
+                <span class="edu-tag">Économétrie</span>
+                <span class="edu-tag">Statistiques</span>
+                <span class="edu-tag">Analyse d'impact</span>
+              </div>
+            </div>
+
+            <!-- Licence -->
+            <div class="glass-panel edu-diploma-card">
+              <div class="edu-diploma-level" style="background: rgba(121, 40, 202, 0.15); color: var(--accent-purple); border-color: rgba(121, 40, 202, 0.3);">Bac +3</div>
+              <div class="edu-diploma-icon" style="background: rgba(121, 40, 202, 0.12); border-color: rgba(121, 40, 202, 0.25);">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="1.5">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </div>
+              <div class="edu-diploma-title" style="color: var(--accent-purple);">Licence Économie Appliquée</div>
+              <div class="edu-diploma-subtitle">Analyse et Politique Économique</div>
+              <div class="edu-diploma-school">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                Université Alioune Diop de Bambey (UADB)
+              </div>
+              <div class="edu-diploma-desc">Fondements théoriques et quantitatifs en économie, macroéconomie, microéconomie appliquée et méthodes statistiques.</div>
+              <div class="edu-diploma-tags">
+                <span class="edu-tag" style="background: rgba(121,40,202,0.12); border-color: rgba(121,40,202,0.3); color: var(--accent-purple);">Macroéconomie</span>
+                <span class="edu-tag" style="background: rgba(121,40,202,0.12); border-color: rgba(121,40,202,0.3); color: var(--accent-purple);">Microéconomie</span>
+                <span class="edu-tag" style="background: rgba(121,40,202,0.12); border-color: rgba(121,40,202,0.3); color: var(--accent-purple);">Politiques publiques</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CERTIFICATIONS & ATTESTATIONS -->
+        <div style="margin-bottom: 2.5rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: var(--accent-emerald); letter-spacing: 0.05em; text-transform: uppercase;">Certifications & Attestations Professionnelles</h3>
+          </div>
+          <div class="edu-certs-grid">
+
+            <!-- AFD -->
+            <div class="glass-panel edu-cert-card">
+              <div class="edu-cert-icon-wrap" style="background: rgba(0,242,254,0.08); border-color: rgba(0,242,254,0.2);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div class="edu-cert-content">
+                <div class="edu-cert-title">Suivi et Évaluation de projets de développement</div>
+                <div class="edu-cert-issuer">
+                  <span class="edu-cert-badge" style="background: rgba(0,242,254,0.1); color: var(--accent-cyan); border-color: rgba(0,242,254,0.25);">AFD</span>
+                  Agence Française de Développement
+                </div>
+                <div class="edu-cert-desc">Cadres logiques, indicateurs de performance, collecte et analyse de données pour projets de développement international.</div>
+              </div>
+            </div>
+
+            <!-- Save the Children -->
+            <div class="glass-panel edu-cert-card">
+              <div class="edu-cert-icon-wrap" style="background: rgba(245,158,11,0.08); border-color: rgba(245,158,11,0.2);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </div>
+              <div class="edu-cert-content">
+                <div class="edu-cert-title">MEAL en situations d'urgence</div>
+                <div class="edu-cert-issuer">
+                  <span class="edu-cert-badge" style="background: rgba(245,158,11,0.1); color: var(--accent-amber); border-color: rgba(245,158,11,0.25);">SCI</span>
+                  Save the Children International
+                </div>
+                <div class="edu-cert-desc">Monitoring, Évaluation, Redevabilité et Apprentissage (MEAL) dans les contextes humanitaires et d'urgence.</div>
+              </div>
+            </div>
+
+            <!-- Comptabilité bancaire UMOA -->
+            <div class="glass-panel edu-cert-card">
+              <div class="edu-cert-icon-wrap" style="background: rgba(79,172,254,0.08); border-color: rgba(79,172,254,0.2);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="edu-cert-content">
+                <div class="edu-cert-title">Comptabilité bancaire UMOA</div>
+                <div class="edu-cert-issuer">
+                  <span class="edu-cert-badge" style="background: rgba(79,172,254,0.1); color: var(--accent-blue); border-color: rgba(79,172,254,0.25);">UMOA</span>
+                  Union Monétaire Ouest-Africaine
+                </div>
+                <div class="edu-cert-desc">Réglementation prudentielle, normes comptables bancaires, opérations de marché et contrôle interne en zone UEMOA.</div>
+              </div>
+            </div>
+
+            <!-- Power BI -->
+            <div class="glass-panel edu-cert-card">
+              <div class="edu-cert-icon-wrap" style="background: rgba(245,158,11,0.08); border-color: rgba(245,158,11,0.2);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f2a11a" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              </div>
+              <div class="edu-cert-content">
+                <div class="edu-cert-title">Microsoft Power BI</div>
+                <div class="edu-cert-issuer">
+                  <span class="edu-cert-badge" style="background: rgba(245,158,11,0.1); color: #f2a11a; border-color: rgba(245,158,11,0.25);">MSFT</span>
+                  Microsoft — Data Analytics
+                </div>
+                <div class="edu-cert-desc">Data Modeling, DAX, Power Query, conception de tableaux de bord exécutifs interactifs et reporting décisionnel.</div>
+              </div>
+            </div>
+
+            <!-- Gestion de Projet -->
+            <div class="glass-panel edu-cert-card">
+              <div class="edu-cert-icon-wrap" style="background: rgba(139,92,246,0.08); border-color: rgba(139,92,246,0.2);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent-violet)" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </div>
+              <div class="edu-cert-content">
+                <div class="edu-cert-title">Fondamentaux de la Gestion de Projet</div>
+                <div class="edu-cert-issuer">
+                  <span class="edu-cert-badge" style="background: rgba(139,92,246,0.1); color: var(--accent-violet); border-color: rgba(139,92,246,0.25);">PM</span>
+                  Planification & Management
+                </div>
+                <div class="edu-cert-desc">Méthodologies projet, WBS, planification Gantt, pilotage budgétaire, gestion des risques et reporting de projet.</div>
+              </div>
+            </div>
+
+            <!-- Intelligence Artificielle -->
+            <div class="glass-panel edu-cert-card">
+              <div class="edu-cert-icon-wrap" style="background: rgba(16,185,129,0.08); border-color: rgba(16,185,129,0.2);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="1.8"><path d="M12 2a10 10 0 1 0 10 10"></path><path d="M12 6a6 6 0 1 0 6 6"></path><circle cx="12" cy="12" r="2"></circle><path d="M20 2l-8 8"></path></svg>
+              </div>
+              <div class="edu-cert-content">
+                <div class="edu-cert-title">Intelligence Artificielle appliquée</div>
+                <div class="edu-cert-issuer">
+                  <span class="edu-cert-badge" style="background: rgba(16,185,129,0.1); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">IA</span>
+                  Applications & Prompt Engineering
+                </div>
+                <div class="edu-cert-desc">Outils IA génératifs, prompt engineering, automatisation intelligente et intégration de l'IA dans les flux décisionnels.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- LANGUES DU CV -->
+        <div class="glass-panel" style="padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(0,242,254,0.1); border: 1px solid rgba(0,242,254,0.2); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">🗣️</div>
+            <div>
+              <h4 style="font-size: 1.1rem; font-weight: 700; color: #fff;">Langues de travail</h4>
+              <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.2rem;">Maîtrise pour contextes nationaux et internationaux</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+            <div class="glass-panel" style="padding: 0.75rem 1.5rem; display: flex; align-items: center; gap: 0.75rem; border-radius: 12px;">
+              <span style="font-size: 1.4rem;">🇫🇷</span>
+              <div>
+                <div style="font-weight: 700; color: var(--accent-cyan); font-size: 0.9rem;">Français</div>
+                <div style="color: var(--text-muted); font-size: 0.78rem;">Langue maternelle — Courant</div>
+              </div>
+            </div>
+            <div class="glass-panel" style="padding: 0.75rem 1.5rem; display: flex; align-items: center; gap: 0.75rem; border-radius: 12px;">
+              <span style="font-size: 1.4rem;">🇬🇧</span>
+              <div>
+                <div style="font-weight: 700; color: var(--accent-emerald); font-size: 0.9rem;">Anglais</div>
+                <div style="color: var(--text-muted); font-size: 0.78rem;">Professionnel — B2/C1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION CAS CONCRETS & DASHBOARDS DÉCISIONNELS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="projectsTag">Systèmes Décisionnels</span>
+          <h2 class="section-title" data-i18n="projectsTitle">Réalisations & Outils de Pilotage</h2>
+          <p class="section-desc">Illustrations de dispositifs de suivi de performance, enquêtes bailleurs et reporting automatisé.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Cas 1: Tableau de Bord Institutionnel APROSI -->
+          <article class="glass-panel project-card">
+            <div class="project-thumb">
+              <img src="assets/images/project-me-kpi.jpg" alt="Tableau de bord de pilotage de performance institutionnelle" loading="lazy">
+              <div class="project-overlay"></div>
+              <span class="project-tag-badge">Pilotage Institutionnel & Direction</span>
+              <div class="project-logo-badge">
+                <img src="assets/images/aprosi-official-logo.jpg" alt="Logo APROSI">
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Système de Performance Institutionnelle & KPI</h3>
+              <p class="project-desc">
+                Conception et animation du système global de performance : définition des indicateurs clés (KPI), consolidation des données des directions opérationnelles et dashboards interactifs pour la Direction Générale.
+              </p>
+              <div class="project-techs">
+                <span class="tech-pill">KPI Stratégiques</span>
+                <span class="tech-pill">Power BI</span>
+                <span class="tech-pill">Reporting Exécutif</span>
+                <span class="tech-pill">Management par les résultats</span>
+              </div>
+              <div class="project-footer">
+                <span style="font-size: 0.82rem; color: #34d399; font-weight: 600;">APROSI • En production</span>
+                <button type="button" class="btn btn-glass btn-sm open-case-study" data-project="aprosiCase" data-i18n="btnViewCase">
+                  Détails
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cas 2: Enquêtes de Performance Bailleurs (Maarifa Consulting) -->
+          <article class="glass-panel project-card">
+            <div class="project-thumb">
+              <img src="assets/images/project-analytics.jpg" alt="Enquêtes de performance et suivi-évaluation bailleurs" loading="lazy">
+              <div class="project-overlay"></div>
+              <span class="project-tag-badge">GIZ • USAID • Counterpart</span>
+              <div class="project-logo-badge" style="background: #0d111a; border-color: rgba(255,255,255,0.12);">
+                <img src="assets/images/maarifaconsulting-logo.jpg" alt="Logo Maarifa Consulting" style="border-radius: 0;">
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Évaluations & Enquêtes de Performance Bailleurs</h3>
+              <p class="project-desc">
+                Mise en œuvre d'enquêtes multisectorielles pour des partenaires techniques et financiers internationaux : cadrage méthodologique, analyse quantitative et aide à la décision stratégique pour les comités de projets.
+              </p>
+              <div class="project-techs">
+                <span class="tech-pill">GIZ / USAID</span>
+                <span class="tech-pill">Stata / R</span>
+                <span class="tech-pill">Enquêtes terrain</span>
+                <span class="tech-pill">Reporting Bailleurs</span>
+              </div>
+              <div class="project-footer">
+                <span style="font-size: 0.82rem; color: #38bdf8; font-weight: 600;">Maarifa Consulting (ex-DataDevAfrica)</span>
+                <button type="button" class="btn btn-glass btn-sm open-case-study" data-project="maarifaCase" data-i18n="btnViewCase">
+                  Détails
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cas 3: Gestion des Risques & Contrôle Bancaire (Afrika Bank) -->
+          <article class="glass-panel project-card">
+            <div class="project-thumb">
+              <img src="assets/images/project-fintech.jpg" alt="Contrôle des opérations bancaires et gestion des risques" loading="lazy">
+              <div class="project-overlay"></div>
+              <span class="project-tag-badge">Secteur Bancaire • BDK</span>
+              <div class="project-logo-badge">
+                <img src="assets/images/afrikabanque-logo.jpg" alt="Logo Afrika Banque">
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Contrôle des Opérations & Gestion des Risques</h3>
+              <p class="project-desc">
+                Supervision des opérations de marché, gestion des risques opérationnels et financiers, reporting réglementaire conforme aux exigences UMOA et renforcement du dispositif de contrôle permanent.
+              </p>
+              <div class="project-techs">
+                <span class="tech-pill">Risques Opérationnels</span>
+                <span class="tech-pill">Conformité UMOA</span>
+                <span class="tech-pill">Contrôle Permanent</span>
+                <span class="tech-pill">Reporting Banque</span>
+              </div>
+              <div class="project-footer">
+                <span style="font-size: 0.82rem; color: #fbbf24; font-weight: 600;">Afrika Bank (ex BDK)</span>
+                <button type="button" class="btn btn-glass btn-sm open-case-study" data-project="bankCase" data-i18n="btnViewCase">
+                  Détails
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT (COORDONNÉES EXACTES DU CV) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="glass-panel contact-card">
+          <div class="contact-grid">
+            <div>
+              <span class="section-tag" data-i18n="contactTag">Coordonnées & Disponibilité</span>
+              <h2 class="contact-info-title" data-i18n="contactTitle">Contactez-moi</h2>
+              <p class="contact-info-desc" data-i18n="contactDesc">
+                Disponible pour échanger sur vos projets de pilotage stratégique, dispositifs de suivi-évaluation, missions d'analyse de données ou transformation digitale.
+              </p>
+
+              <div class="contact-details">
+                <!-- Localisation -->
+                <div class="contact-detail-item">
+                  <div class="contact-icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Adresse</div>
+                    <span>Yoff, Apecsy 2 - Dakar, Sénégal (SN)</span>
+                  </div>
+                </div>
+
+                <!-- Téléphone 1 -->
+                <a href="tel:+221778004307" class="contact-detail-item">
+                  <div class="contact-icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Téléphone principal</div>
+                    <span>+221 77 800 43 07</span>
+                  </div>
+                </a>
+
+                <!-- Téléphone 2 -->
+                <a href="tel:+221765028960" class="contact-detail-item">
+                  <div class="contact-icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Téléphone secondaire</div>
+                    <span>+221 76 502 89 60</span>
+                  </div>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:boubacarndir7@gmail.com" class="contact-detail-item">
+                  <div class="contact-icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Email officiel</div>
+                    <span>boubacarndir7@gmail.com</span>
+                  </div>
+                </a>
+              </div>
+
+              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                <button type="button" class="btn btn-glass copy-email-btn" data-email="boubacarndir7@gmail.com">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copier mon email</span>
+                </button>
+
+                <a href="assets/CV_Boubacar_NDIR.pdf" download="CV_Boubacar_NDIR.pdf" class="btn btn-primary">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>Télécharger le CV PDF</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Formulaire de Contact -->
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="contactName" class="form-label" data-i18n="formName">Votre nom et prénom / Organisation</label>
+                <input type="text" id="contactName" class="form-input" placeholder="Ex: Direction Générale / Partenaire" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label" data-i18n="formEmail">Votre adresse email</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="contact@organisation.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label" data-i18n="formMessage">Votre message ou opportunité</label>
+                <textarea id="contactMessage" class="form-textarea" placeholder="Bonjour Monsieur NDIR, nous souhaitons échanger avec vous concernant..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span data-i18n="btnSend">Envoyer le message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Boubacar NDIR — Spécialiste Pilotage Stratégique, Data Analytics & IA. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL ÉTUDE DE CAS DÉTAILLÉE -->
+  <div class="modal-backdrop" id="caseStudyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Fermer la fenêtre">✕</button>
+      <div class="modal-body">
+        <span class="project-tag-badge" id="modalBadge" style="position: static; display: inline-block; margin-bottom: 0.75rem;">Détails</span>
+        <h2 class="hero-title" id="modalTitle" style="font-size: 1.8rem; margin-bottom: 1.5rem;">Titre de la mission</h2>
+        
+        <img src="assets/images/project-me-kpi.jpg" alt="Aperçu de la mission" class="modal-img" id="modalImg">
+
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--accent-cyan); font-size: 1.05rem; margin-bottom: 0.5rem; font-family: var(--font-heading);">Cadre & Contexte Institutionnel</h4>
+          <p id="modalChallenge" style="color: var(--text-muted); line-height: 1.6;">Description du cadre</p>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--accent-purple); font-size: 1.05rem; margin-bottom: 0.5rem; font-family: var(--font-heading);">Dispositif & Actions Réalisées</h4>
+          <p id="modalSolution" style="color: var(--text-muted); line-height: 1.6;">Actions réalisées</p>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--accent-emerald); font-size: 1.05rem; margin-bottom: 0.5rem; font-family: var(--font-heading);">Impact & Valeur Ajoutée</h4>
+          <p id="modalImpact" style="color: var(--text-muted); line-height: 1.6; font-weight: 500;">Impact</p>
+        </div>
+
+        <div>
+          <h4 style="color: var(--text-main); font-size: 0.95rem; margin-bottom: 0.5rem; font-family: var(--font-heading);">Outils & Compétences Mobilisés</h4>
+          <div class="project-techs" id="modalToolsList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastText">Action effectuée avec succès !</span>
+  </div>
+
+  <!-- BARRE FLOTTANTE D'ÉDITION DIRECTE -->
+  <aside class="edit-mode-bar" aria-label="Outils d'édition du CV">
+    <button type="button" class="btn btn-glass btn-sm" id="toggleEditModeBtn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+      </svg>
+      <span>Modifier mes textes</span>
+    </button>
+    <button type="button" class="btn btn-primary btn-sm" id="saveEditsBtn" style="display: none;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+        <polyline points="17 21 17 13 7 13 7 21"></polyline>
+        <polyline points="7 3 7 8 15 8"></polyline>
+      </svg>
+      <span>Enregistrer</span>
+    </button>
+  </aside>
+
+  <!-- Script interactif -->
+  <script src="js/main.js"></script>
+</body>
+</html>
