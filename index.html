@@ -66,10 +66,13 @@
       </nav>
 
       <div class="nav-actions">
-        <!-- Switcher de Langue -->
-        <button type="button" id="langToggle" class="btn btn-glass btn-sm" aria-label="Changer de langue">
-          EN
-        </button>
+        <!-- Switcher 3 Langues (FR / EN / 中文) -->
+        <div class="lang-switch-group" id="langSwitchGroup" role="group" aria-label="Choix de la langue">
+          <button type="button" class="lang-pill active" data-lang="fr" aria-label="Passer en Français">FR</button>
+          <button type="button" class="lang-pill" data-lang="en" aria-label="Switch to English">EN</button>
+          <button type="button" class="lang-pill" data-lang="zh" aria-label="切换至中文 (Mandarin)">中文</button>
+        </div>
+        <button type="button" id="langToggle" style="display:none;" aria-hidden="true"></button>
 
         <!-- Téléchargement direct du PDF officiel -->
         <a href="assets/CV_Boubacar_NDIR.pdf" download="CV_Boubacar_NDIR.pdf" class="btn btn-primary btn-sm"
@@ -106,9 +109,7 @@
 
           <!-- Pitch officiel tiré du CV -->
           <p class="hero-subtitle" data-i18n="heroSubtitle" data-editable id="heroSubtitleText">
-            Consciencieux et dynamique avec une expertise avancée en pilotage stratégique, suivi-évaluation, gestion de
-            projets et systèmes décisionnels. Solide capacité à structurer, coordonner et optimiser des organisations
-            complexes dans des environnements multisectoriels et internationaux.
+            Expertise pointue en pilotage stratégique, suivi-évaluation, gestion des risques et systèmes décisionnels. Capacité démontrée à structurer et optimiser des organisations complexes en contextes multisectoriels et internationaux.
           </p>
 
           <!-- Boutons d'action -->
@@ -227,13 +228,10 @@
               <span>Synthèse Professionnelle</span>
             </h3>
             <p class="about-text" data-i18n="aboutText1" data-editable id="aboutText1">
-              Spécialiste en pilotage de la performance institutionnelle, suivi-évaluation (S&E), gestion des risques et
-              modélisation de données
+              Spécialiste en pilotage de la performance institutionnelle, suivi-évaluation (S&E), gestion des risques et modélisation de données.
             </p>
             <p class="about-text" data-i18n="aboutText2" data-editable id="aboutText2">
-              J'accompagne les directions générales, institutions bancaires et bailleurs internationaux (GIZ, USAID,
-              Counterpart International, OIM, Téranga Capital, AFD) dans la structuration d'organisations,
-              la gouvernance de la conformité et l'aide à la décision stratégique
+              J'accompagne les directions générales, institutions bancaires et bailleurs internationaux (GIZ, USAID, AFD) dans la structuration d'organisations, la gouvernance de la conformité et l'aide à la décision stratégique.
             </p>
           </div>
 
@@ -600,10 +598,16 @@
                 <span class="timeline-period" data-editable id="exp2Date">2020 - 2024</span>
               </div>
               <ul class="timeline-achievements">
-                <li data-editable id="exp2Ach1">Conduite d'évaluations et enquêtes pour de grands bailleurs</li>
+                <li data-editable id="exp2Ach1">Conduite d'évaluations et enquêtes pour de grands bailleurs (GIZ, USAID, etc.)</li>
                 <li data-editable id="exp2Ach2">Mise en place de systèmes de suivi-évaluation adaptés aux projets</li>
                 <li data-editable id="exp2Ach3">Collecte, traitement et analyse de données quantitatives et qualitatives</li>
               </ul>
+              <div class="timeline-tags" style="margin-top: 0.85rem; display: flex; flex-wrap: wrap; gap: 0.45rem;">
+                <span class="tech-pill">GIZ</span>
+                <span class="tech-pill">USAID</span>
+                <span class="tech-pill">Counterpart International</span>
+                <span class="tech-pill">AFD</span>
+              </div>
             </div>
           </div>
 
@@ -889,9 +893,7 @@
             <div class="project-body">
               <h3 class="project-title">Système de Performance Institutionnelle & KPI</h3>
               <p class="project-desc">
-                Conception et animation du système global de performance : définition des indicateurs clés (KPI),
-                consolidation des données des directions opérationnelles et dashboards interactifs pour la Direction
-                Générale
+                Conception et animation du système global de performance : définition des KPI stratégiques, consolidation des données multi-directions et dashboards exécutifs Power BI pour la Direction Générale.
               </p>
               <div class="project-techs">
                 <span class="tech-pill">KPI Stratégiques</span>
@@ -924,9 +926,7 @@
             <div class="project-body">
               <h3 class="project-title">Évaluations & Enquêtes de Performance Bailleurs</h3>
               <p class="project-desc">
-                Mise en œuvre d'enquêtes multisectorielles pour des partenaires techniques et financiers internationaux
-                : cadrage méthodologique, analyse quantitative et aide à la décision stratégique pour les comités de
-                projets
+                Conduite d'évaluations multisectorielles et d'enquêtes de performance pour de grands bailleurs (GIZ, USAID, Counterpart) : cadrage méthodologique, analyse quantitative et aide à la décision.
               </p>
               <div class="project-techs">
                 <span class="tech-pill">GIZ / USAID</span>
@@ -959,8 +959,7 @@
             <div class="project-body">
               <h3 class="project-title">Contrôle des Opérations & Gestion des Risques</h3>
               <p class="project-desc">
-                Supervision des opérations de marché, gestion des risques opérationnels et financiers, reporting
-                réglementaire conforme aux exigences UMOA et renforcement du dispositif de contrôle permanent
+                Supervision des opérations de marché, gestion des risques opérationnels et financiers, production du reporting prudentiel et contrôle permanent en conformité avec les normes UMOA.
               </p>
               <div class="project-techs">
                 <span class="tech-pill">Risques Opérationnels</span>
@@ -990,8 +989,7 @@
               <span class="section-tag" data-i18n="contactTag">Coordonnées & Disponibilité</span>
               <h2 class="contact-info-title" data-i18n="contactTitle">Contactez-moi</h2>
               <p class="contact-info-desc" data-i18n="contactDesc">
-                Disponible pour échanger sur vos projets de pilotage stratégique, dispositifs de suivi-évaluation,
-                missions d'analyse de données ou transformation digitale.
+                Disponible pour échanger sur vos projets de pilotage stratégique, dispositifs de suivi-évaluation, missions d'analyse de données et transformation digitale.
               </p>
 
               <div class="contact-details">

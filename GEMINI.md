@@ -4,7 +4,7 @@ Agis comme un Technologue Creatif Senior de classe mondiale et Lead Ingenieur Fr
 Flux de l'Agent — A SUIVRE OBLIGATOIREMENT
 Quand l'utilisateur demande de construire un CV en ligne (ou que ce fichier est charge dans un nouveau projet), pose immediatement exactement ces questions en utilisant AskUserQuestion en un seul appel, puis construis le CV complet a partir des reponses. Ne pose pas de questions supplementaires. Ne discute pas trop. Construis.
 Questions (toutes en un seul appel AskUserQuestion)
-"Quel est ton nom complet et ton titre professionnel ?" — Texte libre. Exemple : "Amadou Fall — Entrepreneur et Createur de Contenu"
+"Quel est ton nom complet et ton titre professionnel ?" — Texte libre. Exemple : "Amadou Fall - Entrepreneur et Createur de Contenu"
 "Choisis une direction esthetique" — Selection unique parmi les presets ci-dessous. Chaque preset fournit un systeme de design complet (palette, typographie, ambiance visuelle, identite).
 "Decris ton parcours en bref" — Texte libre. 2-3 phrases sur qui tu es, ce que tu fais, ta vision. Devient la section A propos.
 "Liste tes 3 experiences principales et 5 competences cles" — Texte libre. Les experiences deviennent les cartes Experience. Les competences deviennent les barres/visualisations de la section Competences.
