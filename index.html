@@ -168,13 +168,27 @@
           </div>
         </div>
 
-        <!-- Photo de profil réelle de Boubacar NDIR -->
+        <!-- Photo de profil réelle de Boubacar NDIR (Carrousel infini de portraits) -->
         <div class="hero-visual">
           <div class="avatar-border-glow"></div>
-          <div class="avatar-wrapper" style="border-radius: 50%; width: 340px; height: 340px;">
-            <img src="assets/images/boubacar-photo-officielle.jpg" alt="Photo de Boubacar NDIR" class="avatar-img"
-              width="340" height="340" loading="eager"
-              style="object-fit: cover; object-position: center top; width: 100%; height: 100%;">
+          <div class="avatar-wrapper" id="avatarWrapper" style="border-radius: 50%; width: 340px; height: 340px;" title="Cliquez pour changer de photo">
+            <div class="avatar-slider-track" id="avatarTrack">
+              <div class="avatar-slide active">
+                <img src="assets/images/boubacar-photo-officielle.jpg" alt="Photo de Boubacar NDIR - Portrait officiel 1" class="avatar-img"
+                  width="340" height="340" loading="eager"
+                  style="object-fit: cover; object-position: center top; width: 100%; height: 100%;">
+              </div>
+              <div class="avatar-slide">
+                <img src="assets/images/boubacar-portrait-2.jpg" alt="Photo de Boubacar NDIR - Portrait officiel 2" class="avatar-img"
+                  width="340" height="340" loading="lazy"
+                  style="object-fit: cover; object-position: center 20%; width: 100%; height: 100%;">
+              </div>
+            </div>
+            <!-- Indicateurs discrets de défilement -->
+            <div class="avatar-slider-dots" id="avatarDots" aria-label="Sélection photo de profil">
+              <button type="button" class="avatar-dot active" data-index="0" aria-label="Photo 1"></button>
+              <button type="button" class="avatar-dot" data-index="1" aria-label="Photo 2"></button>
+            </div>
           </div>
 
           <!-- Badges flottants -->
@@ -374,7 +388,7 @@
               <div class="edu-cert-content">
                 <div class="edu-cert-title" data-i18n="cert1Title">Suivi et Évaluation de projets de développement</div>
                 <div class="edu-cert-issuer">
-                  <span class="edu-cert-badge"
+                  <span class="edu-cert-badge" data-i18n="cert1Badge"
                     style="background: rgba(0,242,254,0.1); color: var(--accent-cyan); border-color: rgba(0,242,254,0.25);">AFD</span>
                   <span data-i18n="cert1Issuer">Agence Française de Développement</span>
                 </div>
@@ -418,7 +432,7 @@
               <div class="edu-cert-content">
                 <div class="edu-cert-title" data-i18n="cert3Title">Comptabilité bancaire UMOA</div>
                 <div class="edu-cert-issuer">
-                  <span class="edu-cert-badge"
+                  <span class="edu-cert-badge" data-i18n="cert3Badge"
                     style="background: rgba(79,172,254,0.1); color: var(--accent-blue); border-color: rgba(79,172,254,0.25);">UMOA</span>
                   <span data-i18n="cert3Issuer">Union Monétaire Ouest-Africaine</span>
                 </div>
@@ -566,7 +580,7 @@
               <div class="timeline-header">
                 <div>
                   <h3 class="timeline-role" data-editable id="exp2Role" data-i18n="exp2Role">Consultant Statisticien / Suivi-Évaluation</h3>
-                  <div class="timeline-company" data-editable id="exp2Company" data-i18n="exp2Company">Maarifa Consulting (ex DataDevAfrica)</div>
+                  <div class="timeline-company" data-editable id="exp2Company" data-i18n="exp2Company">Maarifa Consulting</div>
                 </div>
                 <span class="timeline-period" data-editable id="exp2Date" data-i18n="exp2Date">2020 - 2024</span>
               </div>
@@ -853,10 +867,10 @@
                 Conception et animation du système global de performance : définition des KPI stratégiques, consolidation des données multi-directions et dashboards exécutifs Power BI pour la Direction Générale.
               </p>
               <div class="project-techs">
-                <span class="tech-pill">KPI Stratégiques</span>
+                <span class="tech-pill" data-i18n="projPillKpi">KPI Stratégiques</span>
                 <span class="tech-pill">Power BI</span>
-                <span class="tech-pill">Reporting Exécutif</span>
-                <span class="tech-pill">Management par les résultats</span>
+                <span class="tech-pill" data-i18n="projPillExec">Reporting Exécutif</span>
+                <span class="tech-pill" data-i18n="projPillRbm">Management par les résultats</span>
               </div>
               <div class="project-footer">
                 <span style="font-size: 0.82rem; color: #34d399; font-weight: 600;" data-i18n="proj1Status">APROSI • En production</span>
@@ -888,8 +902,8 @@
               <div class="project-techs">
                 <span class="tech-pill">GIZ / USAID</span>
                 <span class="tech-pill">Stata / R</span>
-                <span class="tech-pill">Enquêtes terrain</span>
-                <span class="tech-pill">Reporting Bailleurs</span>
+                <span class="tech-pill" data-i18n="projPillSurveys">Enquêtes terrain</span>
+                <span class="tech-pill" data-i18n="projPillDonors">Reporting Bailleurs</span>
               </div>
               <div class="project-footer">
                 <span style="font-size: 0.82rem; color: #38bdf8; font-weight: 600;" data-i18n="proj2Company">Maarifa Consulting</span>
@@ -918,10 +932,10 @@
                 Supervision des opérations de marché, gestion des risques opérationnels et financiers, production du reporting prudentiel et contrôle permanent en conformité avec les normes UMOA.
               </p>
               <div class="project-techs">
-                <span class="tech-pill">Risques Opérationnels</span>
-                <span class="tech-pill">Conformité UMOA</span>
-                <span class="tech-pill">Contrôle Permanent</span>
-                <span class="tech-pill">Reporting Banque</span>
+                <span class="tech-pill" data-i18n="projPillRisk">Risques Opérationnels</span>
+                <span class="tech-pill" data-i18n="projPillUmoa">Conformité UMOA</span>
+                <span class="tech-pill" data-i18n="projPillPerm">Contrôle Permanent</span>
+                <span class="tech-pill" data-i18n="projPillBank">Reporting Banque</span>
               </div>
               <div class="project-footer">
                 <span style="font-size: 0.82rem; color: #fbbf24; font-weight: 600;" data-i18n="proj3Company">Afrika Bank (ex BDK)</span>

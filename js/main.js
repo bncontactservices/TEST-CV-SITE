@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. Dictionnaires de Traduction Trilingue Complets (FR / EN / 中文)
   const translations = {
     fr: {
-      // Navigation
       navAbout: "Profil",
       navEducation: "Formation & Certifications",
       navExperience: "Expériences",
@@ -16,8 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navProjects: "Systèmes & Outils",
       navContact: "Contact",
       btnDownloadPdf: "Télécharger CV",
-
-      // Hero
       heroStatus: "Resp. Suivi-Évaluation @ APROSI • Expert Data & IA",
       heroTitleRole: "Spécialiste Pilotage Stratégique, Data Analytics & IA",
       heroSubtitle: "Expertise pointue en pilotage stratégique, suivi-évaluation, gestion des risques et systèmes décisionnels. Capacité démontrée à structurer et optimiser des organisations complexes en contextes multisectoriels et internationaux.",
@@ -31,183 +28,175 @@ document.addEventListener('DOMContentLoaded', () => {
       metricData: "Power BI • Stata • R",
       badgeKpi: "Pilotage KPI & Tableaux de bord",
       avatarBadge: "Suivi-Évaluation & IA",
-
-      // Profil & Vision
       aboutTag: "Profil & Vision",
       aboutTitle: "Une expertise transversale et rigoureuse",
       aboutDesc: "Du pilotage stratégique de haut niveau à l'analyse statistique pointue et à l'intégration de l'IA",
       aboutCard1Title: "Synthèse Professionnelle",
       aboutText1: "Spécialiste en pilotage de la performance institutionnelle, suivi-évaluation (S&E), gestion des risques et modélisation de données.",
-      aboutText2: "J'accompagne les directions générales, institutions bancaires et bailleurs internationaux (GIZ, USAID, Oxfam, MEDA) dans la structuration d'organisations, la gouvernance de la conformité et l'aide à la décision stratégique.",
+      aboutText2: "J'accompagne les directions générales, institutions bancaires et bailleurs internationaux (GIZ, USAID, AFD) dans la structuration d'organisations, la gouvernance de la conformité et l'aide à la décision stratégique.",
       aboutCard2Title: "Points Forts & Valeur Ajoutée",
       val1: "Pilotage de systèmes de performance institutionnelle & KPI de Direction Générale",
       val2: "Dispositifs de suivi-évaluation complets & évaluations d'impact",
       val3: "Gestion des risques opérationnels & financiers, conformité bancaire et contrôle permanent",
       val4: "Modélisation statistique avancée, Business Intelligence (Power BI) et outils d'IA",
-
-      // Formation & Certifications
       eduTag: "Parcours Académique & Titres",
       eduTitle: "Formation & Certifications",
-      eduDesc: "Excellence académique en économétrie, finance et analyse de données avec certifications internationales",
+      eduDesc: "Diplômes universitaires en économie appliquée et certifications professionnelles internationales",
       eduUniSectionTitle: "Formation Universitaire",
-      eduM2Title: "Master 2 - Économétrie Appliquée",
-      eduM2Level: "Niveau Bac + 5",
-      eduM2School: "UADB - Université Alioune Diop de Bambey",
-      eduM2Subtitle: "Spécialisation : Suivi-Évaluation, Modélisation Économétrique & Analyse de Politiques Publiques",
-      eduM2Desc: "Formation d'excellence axée sur la modélisation statistique avancée, l'économétrie des séries temporelles, les méthodes d'évaluation d'impact rigoureuses, l'économie du développement et le management stratégique de projets.",
+      eduM2Level: "Bac +5",
+      eduM2Title: "Master 2 Économétrie Appliquée",
+      eduM2Subtitle: "Économie du Développement",
+      eduM2School: "Université Alioune Diop de Bambey (UADB)",
+      eduM2Desc: "Modélisation économétrique avancée, évaluation des politiques publiques et analyse d'impact quantitatif.",
       tagEconometrics: "Économétrie",
-      tagStats: "Statistiques avancées",
-      tagImpact: "Évaluation d'impact",
-      tagPublicPolicy: "Politiques publiques",
+      tagStats: "Statistiques",
+      tagImpact: "Analyse d'impact",
       tagProjectMgmt: "Gestion de Projet",
-      eduLicenceTitle: "Licence - Sciences Économiques & Gestion",
-      eduLicenceLevel: "Niveau Bac + 3",
-      eduLicenceSchool: "UADB - Université Alioune Diop de Bambey",
-      eduLicenceSubtitle: "Option : Économie Appliquée & Analyse Quantitative",
-      eduLicenceDesc: "Fondements théoriques solides en microéconomie, macroéconomie, probabilités, statistiques inférentielles, mathématiques financières, analyse budgétaire et comptabilité de gestion.",
-      tagMicro: "Microéconomie",
+      eduLicenceLevel: "Bac +3",
+      eduLicenceTitle: "Licence Économie Appliquée",
+      eduLicenceSubtitle: "Analyse et Politique Économique",
+      eduLicenceSchool: "Université Alioune Diop de Bambey (UADB)",
+      eduLicenceDesc: "Fondements théoriques et quantitatifs en analyse économique, macroéconomie et méthodes statistiques.",
       tagMacro: "Macroéconomie",
-      eduCertSectionTitle: "Certifications Internationales & Spécialisations",
-      cert1Title: "Analyste Financier",
-      cert1Issuer: "Institut de Formation Bancaire • Dakar",
-      cert1Desc: "Analyse financière approfondie, diagnostic de rentabilité, évaluation d'entreprises et modélisation de bilans.",
-      cert2Title: "Évaluation des Risques Financiers & Opérationnels",
-      cert2Issuer: "AFGES • Académie Française de Formation Bancaire",
-      cert2Desc: "Cartographie des risques opérationnels, réglementation prudentielle Bâle II/III et contrôle interne bancaire.",
-      cert3Title: "Audit Interne & Conformité Réglementaire",
-      cert3Issuer: "IFACI / Cabinet d'Audit International",
-      cert3Desc: "Méthodologie d'audit interne, conformité LCB-FT, gouvernance institutionnelle et gestion des délégations.",
-      cert4Title: "Spécialisation Power BI & Business Intelligence",
-      cert4Issuer: "Certification Professionnelle Microsoft / DataCamp",
-      cert4Desc: "Modélisation DAX avancée, création de pipelines Power Query et dashboards décisionnels exécutifs.",
-      cert5Title: "Statistiques & Modélisation Économétrique avec Stata & R",
-      cert5Issuer: "DataCamp / Enseignement Supérieur",
-      cert5Desc: "Traitement de données d'enquêtes, régressions avancées, économétrie de panel et visualisations complexes.",
-      cert6Title: "Intelligence Artificielle & Automatisation des Données",
-      cert6Issuer: "Certification Spécialisée Data & IA",
-      cert6Desc: "Prompt engineering pour analystes, automatisation de workflows décisionnels et intégration de modèles d'IA.",
+      tagMicro: "Microéconomie",
+      tagPublicPolicy: "Politiques publiques",
+      eduCertSectionTitle: "Certifications & Attestations Professionnelles",
+      cert1Badge: "AFD",
+      cert1Title: "Suivi et Évaluation de projets de développement",
+      cert1Issuer: "Agence Française de Développement",
+      cert1Desc: "Cadres logiques, indicateurs de performance, collecte et analyse de données pour projets de développement international.",
+      cert2Title: "MEAL en situations d'urgence",
+      cert2Issuer: "Save the Children International",
+      cert2Desc: "Monitoring, Évaluation, Redevabilité et Apprentissage (MEAL) dans les contextes humanitaires et d'urgence.",
+      cert3Badge: "UMOA",
+      cert3Title: "Comptabilité bancaire UMOA",
+      cert3Issuer: "Union Monétaire Ouest-Africaine",
+      cert3Desc: "Réglementation prudentielle, normes comptables bancaires, opérations de marché et contrôle interne en zone UMOA.",
+      cert4Title: "Microsoft Power BI",
+      cert4Issuer: "Microsoft - Data Analytics",
+      cert4Desc: "Data Modeling, DAX, Power Query, conception de tableaux de bord exécutifs interactifs et reporting décisionnel.",
+      cert5Title: "Fondamentaux de la Gestion de Projet",
+      cert5Issuer: "Planification & Management",
+      cert5Desc: "Méthodologies projet, WBS, planification Gantt, pilotage budgétaire, gestion des risques et reporting de projet.",
+      cert6Title: "Intelligence Artificielle appliquée",
+      cert6Issuer: "Applications & Prompt Engineering",
+      cert6Desc: "Outils IA génératifs, prompt engineering, automatisation intelligente et intégration de l'IA dans les flux décisionnels.",
       langSectionTitle: "Langues de travail",
-      langSectionDesc: "Capacité à conduire des missions, animer des réunions stratégiques et rédiger des rapports techniques",
+      langSectionDesc: "Maîtrise pour contextes nationaux et internationaux",
       langFr: "Français",
-      langFrLevel: "Langue maternelle / bilingue professionnel (rédaction de rapports institutionnels, animation de comités stratégiques)",
+      langFrLevel: "Langue maternelle - Courant",
       langEn: "Anglais",
-      langEnLevel: "Pratique professionnelle (rédaction de synthèses de projets, interaction avec bailleurs de fonds internationaux)",
-
-      // Expériences Professionnelles
+      langEnLevel: "Professionnel - B2/C1",
       expTag: "Parcours Professionnel",
       expTitle: "Expériences Professionnelles",
-      expDesc: "Trajectoire éprouvée au sein d'agences publiques, d'institutions bancaires de premier plan et de cabinets de conseil internationaux",
-      exp1Role: "Responsable Suivi-Évaluation (S&E)",
-      exp1Company: "APROSI - Agence d'Aménagement et de Promotion des Sites Industriels (Dakar)",
-      exp1Date: "Fév. 2025 - Présent",
-      exp1Ach1: "Conception et déploiement du dispositif global de suivi-évaluation de l'agence",
-      exp1Ach2: "Mise en place de tableaux de bord de pilotage stratégique sous Power BI pour la Direction Générale",
-      exp1Ach3: "Définition, suivi et analyse des indicateurs de performance (KPI) des parcs et zones industrielles",
-      exp1Ach4: "Coordination de la collecte des données d'activités auprès des différentes directions opérationnelles",
-      exp1Ach5: "Production des rapports périodiques de performance et notes d'aide à la décision stratégique",
-      exp2Role: "Consultant Suivi-Évaluation & Analyse de Données",
-      exp2Company: "Maarifa Consulting (Dakar)",
-      exp2Date: "Mars 2023 - Fév. 2025",
-      exp2Ach1: "Conduite d'évaluations et enquêtes pour de grands bailleurs (GIZ, USAID, Counterpart International, Oxfam, Speak Up Africa, MEDA, Teranga Capital)",
+      expDesc: "Trajectoire éprouvée au sein d'institutions publiques, banques de premier plan et cabinets internationaux",
+      exp1Role: "Chef de Division / Responsable Suivi-Évaluation",
+      exp1Company: "APROSI (Agence d'Aménagement et de Promotion des Sites Industriels)",
+      exp1Date: "2022 - Présent",
+      exp1Ach1: "Supervision du dispositif de suivi-évaluation et reporting de la Direction Générale",
+      exp1Ach2: "Élaboration des plans d'action et tableaux de bord de performance stratégique",
+      exp1Ach3: "Définition, suivi et fiabilisation des indicateurs clés de performance (KPI)",
+      exp1Ach4: "Coordination des directions opérationnelles et animation des comités de revue",
+      exp1Ach5: "Modernisation des outils de pilotage décisionnels et intégration de tableaux de bord Power BI",
+      exp2Role: "Consultant Statisticien / Suivi-Évaluation",
+      exp2Company: "Maarifa Consulting",
+      exp2Date: "2020 - 2024",
+      exp2Ach1: "Conduite d'évaluations et enquêtes pour de grands bailleurs (GIZ, USAID, Oxfam, Speak Up Africa, MEDA, Teranga Capital, etc.)",
       exp2Ach2: "Mise en place de systèmes de suivi-évaluation adaptés aux projets",
       exp2Ach3: "Collecte, traitement et analyse de données quantitatives et qualitatives",
-      exp3Role: "Chargé du Contrôle des Opérations de Marché & Risques",
-      exp3Company: "Afrika Bank (ex-Banque de Dakar - BDK, Dakar)",
-      exp3Date: "Nov. 2021 - Mars 2023",
-      exp3Ach1: "Contrôle permanent des opérations de trésorerie, change et titres pour assurer la conformité réglementaire UMOA",
-      exp3Ach2: "Surveillance des limites de risques (contrepartie, liquidité, taux) et production des reportings prudentiels",
-      exp3Ach3: "Identification des anomalies opérationnelles et formulation de recommandations pour fiabiliser les processus",
-      exp3Ach4: "Participation aux travaux de conformité réglementaire et d'audit interne sur les activités de marché",
-      exp4Role: "Analyste Risques Financiers & Crédit (Stage)",
-      exp4Company: "Banque Régionale / Institution Financière (Dakar)",
-      exp4Date: "Janv. 2021 - Oct. 2021",
-      exp4Ach1: "Analyse financière de dossiers de crédit aux entreprises et évaluation de solvabilité",
-      exp4Ach2: "Contribution à la revue périodique du portefeuille de contreparties et suivi des engagements",
-
-      // Domaines de Compétences
+      exp3Role: "Assistant Direction des Risques, Conformité & Contrôle Permanent",
+      exp3Company: "Afrika Bank (ex BDK)",
+      exp3Date: "2020 - 2022",
+      exp3Ach1: "Contrôle permanent des opérations de marché et suivi des activités bancaires",
+      exp3Ach2: "Gestion, cartographie et surveillance des risques opérationnels et financiers",
+      exp3Ach3: "Élaboration du reporting réglementaire prudentiel et renforcement du contrôle interne",
+      exp3Ach4: "Contribution active à la gouvernance d'entreprise et à la conformité institutionnelle UMOA",
+      exp4Role: "Stage à Orabank - Direction de la clientèle",
+      exp4Company: "Orabank",
+      exp4Date: "Oct-Nov 2018",
+      exp4Ach1: "Enquêtes de satisfaction, questionnaires clientèle et opérations d'OPV",
+      exp4Ach2: "Traitement d'opérations bancaires sous le progiciel Sopra Banking Amplitude",
       skillsTag: "Boîte à Outils & Savoir-Faire",
       skillsTitle: "Domaines de Compétences",
-      skillsDesc: "Une combinaison unique de vision stratégique de haut niveau et de maîtrise technique opérationnelle des outils modernes de données",
-      cat1Title: "Pilotage Stratégique & Gouvernance",
-      cat1Skill1: "Pilotage de la performance & KPI",
-      cat1Skill2: "Tableaux de bord de Direction Générale",
-      cat1Skill3: "Planification stratégique & opérationnelle",
-      cat1Skill4: "Coordination institutionnelle",
-      cat2Title: "Suivi-Évaluation & Impact",
-      cat2Skill1: "Systèmes de suivi-évaluation complets",
-      cat2Skill2: "Méthodologies d'évaluation d'impact",
-      cat2Skill3: "Enquêtes terrain & collecte mobile",
-      cat2Skill4: "Reporting pour bailleurs internationaux",
-      cat3Title: "Risques, Conformité & Contrôle",
-      cat3Skill1: "Contrôle permanent & audit opérationnel",
-      cat3Skill2: "Cartographie des risques & conformité",
-      cat3Skill3: "Réglementation prudentielle bancaire",
-      cat3Skill4: "Gouvernance des procédures & conformité",
-      cat4Title: "Data Analytics & Outils Décisionnels",
-      cat4Skill1: "Power BI (DAX, Power Query, Datamarts)",
-      cat4Skill2: "Stata (Économétrie, Panel, Micro-données)",
-      cat4Skill3: "R (Modélisation, ggplot2, tidyverse)",
-      cat4Skill4: "KoboToolbox & ODK (Collecte de données)",
-      cat5Title: "Économétrie & Modélisation",
-      cat5Val1: "Économétrie appliquée, séries temporelles & panels",
-      cat5Val2: "Analyses de régression avancées & simulations",
-      cat6Title: "Intelligence Artificielle Appliquée",
-      cat6Val1: "Intégration d'outils d'IA pour l'analyse de données",
-      cat6Val2: "Automatisation de synthèses & reporting augmenté",
-
-      // Réalisations et Outils de Pilotage
+      skillsDesc: "Expertises structurées en pilotage stratégique, suivi-évaluation, risques, data et IA",
+      cat1Title: "Pilotage stratégique & Performance",
+      cat1Skill1: "Définition et suivi des KPI stratégiques",
+      cat1Skill2: "Tableaux de bord exécutifs & reporting",
+      cat1Skill3: "Management par les résultats",
+      cat1Skill4: "Analyse de performance organisationnelle",
+      cat2Title: "Suivi-Évaluation & Projets",
+      cat2Skill1: "Évaluation d'impact",
+      cat2Skill2: "Suivi de projets multi-acteurs",
+      cat2Skill3: "Coordination et aide à la décision",
+      cat2Skill4: "Gestion de projets stratégiques",
+      cat3Title: "Finance, Risques & Gouvernance",
+      cat3Skill1: "Contrôle des risques opérationnels",
+      cat3Skill2: "Conformité & contrôle permanent",
+      cat3Skill3: "Analyse financière et opérationnelle",
+      cat3Skill4: "Reporting réglementaire (UMOA)",
+      cat4Title: "Data, Statistique & Outils",
+      cat4Skill1: "Power BI (Modélisation DAX & Dashboards)",
+      cat4Skill2: "Stata, R, SPSS, SAS",
+      cat4Skill3: "Économétrie et statistique avancée",
+      cat4Skill4: "SIG (QGIS) & MS Project",
+      cat5Title: "Transformation organisationnelle & Digitale",
+      cat5Val1: "Conduite du changement et optimisation des processus",
+      cat5Val2: "Mise en place d'organisations axées sur les données",
+      cat6Title: "IA - Intelligence Artificielle",
+      cat6Val1: "Prompt engineering et intégration des flux d'analyse",
+      cat6Val2: "Supports digitaux et automatisation décisionnelle",
       projectsTag: "Systèmes Décisionnels",
       projectsTitle: "Réalisations et Outils de Pilotage",
-      projectsDesc: "Découvrez les dispositifs décisionnels et cadres analytiques conçus et mis en œuvre au cours de mon parcours",
-      proj1Badge: "Direction Générale & APROSI",
-      proj1Title: "Dispositif Global de Suivi-Évaluation & KPI Stratégiques",
-      proj1Desc: "Conception intégrale du cadre méthodologique et déploiement de tableaux de bord automatisés sous Power BI pour piloter l'avancement des parcs industriels au Sénégal.",
-      proj1Status: "En production • Déploiement actif",
-      proj2Badge: "GIZ • USAID • Oxfam • Speak Up Africa",
-      proj2Title: "Systèmes de Suivi-Évaluation & Évaluations Bailleurs",
-      proj2Company: "Maarifa Consulting • Bailleurs internationaux",
-      proj2Desc: "Conduite d'enquêtes terrain d'envergure, traitement statistique rigoureux sous Stata & R et rédaction de rapports stratégiques d'aide à la décision.",
-      proj3Badge: "Secteur Bancaire • UMOA",
-      proj3Title: "Dispositif de Contrôle Permanent & Surveillance des Risques",
-      proj3Company: "Afrika Bank (ex-Banque de Dakar - BDK)",
-      proj3Desc: "Supervision quotidienne des opérations de marché de trésorerie et de change, contrôle de la conformité réglementaire UMOA et fiabilisation des flux financiers.",
+      projectsDesc: "Dispositifs opérationnels conçus pour la Direction Générale et les partenaires internationaux",
+      proj1Badge: "Pilotage Institutionnel & Direction",
+      proj1Title: "Système de Performance Institutionnelle & KPI",
+      proj1Desc: "Conception et animation du système global de performance : définition des KPI stratégiques, consolidation des données multi-directions et dashboards exécutifs Power BI pour la Direction Générale.",
+      proj1Status: "APROSI • En production",
       btnViewCase: "Détails",
-
-      // Contact & Coordonnées
+      proj2Badge: "GIZ • USAID • Oxfam • Teranga",
+      proj2Title: "Évaluations & Enquêtes de Performance Bailleurs",
+      proj2Desc: "Conduite d'évaluations multisectorielles et d'enquêtes de performance pour de grands bailleurs internationaux : cadrage méthodologique, analyse quantitative et aide à la décision.",
+      proj2Company: "Maarifa Consulting",
+      proj3Badge: "Secteur Bancaire • BDK",
+      proj3Title: "Contrôle des Opérations & Gestion des Risques",
+      proj3Desc: "Supervision des opérations de marché, gestion des risques opérationnels et financiers, production du reporting prudentiel et contrôle permanent en conformité avec les normes UMOA.",
+      proj3Company: "Afrika Bank (ex BDK)",
       contactTag: "Coordonnées & Disponibilité",
-      contactTitle: "Travaillons ensemble",
-      contactDesc: "Disponible pour échanger sur vos projets de pilotage stratégique, dispositifs de suivi-évaluation, missions d'analyse de données ou transformation digitale.",
+      contactTitle: "Contactez-moi",
+      contactDesc: "Disponible pour échanger sur vos projets de pilotage stratégique, dispositifs de suivi-évaluation, missions d'analyse de données et transformation digitale.",
       labelLocation: "Localisation",
-      valLocation: "Dakar, Sénégal (Mobilité internationale)",
-      labelPhone: "Téléphone",
-      labelPhone2: "Téléphone direct",
-      labelEmail: "Email direct",
-      labelProfiles: "Réseaux professionnels",
-      valLinkedIn: "Profil certifié Boubacar NDIR",
+      valLocation: "Dakar, Sénégal",
+      labelPhone: "Téléphone principal",
+      labelPhone2: "Téléphone secondaire",
+      labelEmail: "Email officiel",
+      labelProfiles: "LinkedIn professionnel",
+      valLinkedIn: "Profil de Boubacar NDIR",
       formName: "Votre nom et prénom / Organisation",
       formEmail: "Votre adresse email",
       formMessage: "Votre message ou opportunité",
-      placeholderName: "Ex: Moussa Diop - Directeur Général / Bailleur",
-      placeholderEmail: "Ex: contact@organisation.org",
-      placeholderMessage: "Décrivez votre projet, vos besoins en suivi-évaluation ou votre opportunité...",
       btnSend: "Envoyer le message",
-
-      // Footer
       footerRights: "© 2026 Boubacar NDIR - Spécialiste Pilotage Stratégique, Data Analytics & IA - Tous droits réservés",
-
-      // Modal Headers
       modalChallengeLabel: "Cadre & Contexte Institutionnel",
       modalSolutionLabel: "Dispositif & Actions Réalisées",
       modalImpactLabel: "Impact & Valeur Ajoutée",
       modalToolsLabel: "Outils & Compétences Mobilisés",
-
-      // Toasts
-      toastCopied: "Adresse email (boubacarndir7@gmail.com) copiée dans le presse-papier !",
-      toastOpeningMail: "Ouverture de votre messagerie..."
+      placeholderName: "Ex: Direction Générale / Partenaire",
+      placeholderEmail: "contact@organisation.com",
+      placeholderMessage: "Décrivez votre projet, vos besoins en suivi-évaluation ou votre opportunité...",
+      toastCopied: "Email copié dans le presse-papier !",
+      toastOpeningMail: "Ouverture de votre messagerie...",
+      toastSaved: "Modifications enregistrées localement !",
+      projPillKpi: "KPI Stratégiques",
+      projPillExec: "Reporting Exécutif",
+      projPillRbm: "Management par les résultats",
+      projPillSurveys: "Enquêtes terrain",
+      projPillDonors: "Reporting Bailleurs",
+      projPillRisk: "Risques Opérationnels",
+      projPillUmoa: "Conformité UMOA",
+      projPillPerm: "Contrôle Permanent",
+      projPillBank: "Reporting Banque",
     },
-
     en: {
-      // Navigation
       navAbout: "Profile",
       navEducation: "Education & Certifications",
       navExperience: "Experience",
@@ -215,210 +204,198 @@ document.addEventListener('DOMContentLoaded', () => {
       navProjects: "Systems & Tools",
       navContact: "Contact",
       btnDownloadPdf: "Download CV",
-
-      // Hero
-      heroStatus: "Head of M&E @ APROSI • Data Analytics & AI Expert",
+      heroStatus: "M&E Lead @ APROSI • Data & AI Expert",
       heroTitleRole: "Strategic Steering, Data Analytics & AI Specialist",
-      heroSubtitle: "Advanced expertise in strategic leadership, monitoring & evaluation (M&E), risk governance, and decision-support systems. Demonstrated ability to structure and optimize complex organizations across multisectoral and international environments.",
-      ctaDownloadCv: "Download My Resume (PDF)",
-      ctaContact: "Get in Touch",
-      metricM2Val: "Master 2",
+      heroSubtitle: "In-depth expertise in strategic steering, monitoring and evaluation (M&E), risk management, and executive decision-support systems. Proven track record in structuring and optimizing complex organizations across international and multisectoral environments.",
+      ctaDownloadCv: "Download CV (PDF)",
+      ctaContact: "Contact Me",
+      metricM2Val: "Master's 2",
       metricM2: "Applied Econometrics (UADB)",
       metricSectorVal: "Multisectoral",
-      metricSector: "Banking • Public Agencies • Donors",
+      metricSector: "Banking • Institutional • Donors",
       metricDataVal: "Data & AI",
       metricData: "Power BI • Stata • R",
-      badgeKpi: "KPI Steering & Executive Dashboards",
-      avatarBadge: "Monitoring & Evaluation & AI",
-
-      // Profil & Vision
+      badgeKpi: "Strategic KPI Steering & Dashboards",
+      avatarBadge: "M&E & AI Systems",
       aboutTag: "Profile & Vision",
-      aboutTitle: "Rigorous and Cross-Disciplinary Expertise",
-      aboutDesc: "From high-level strategic steering to advanced statistical analysis and artificial intelligence integration",
+      aboutTitle: "Cross-Disciplinary & Rigorous Expertise",
+      aboutDesc: "From executive-level strategic steering to advanced statistical analysis and AI integration",
       aboutCard1Title: "Professional Summary",
-      aboutText1: "Senior specialist in institutional performance management, monitoring and evaluation (M&E), risk governance, and econometric modeling.",
-      aboutText2: "I support executive boards, banking institutions, and international donors (GIZ, USAID, Oxfam, MEDA) in organizational structuring, compliance governance, and strategic decision support.",
+      aboutText1: "Specialist in institutional performance steering, monitoring and evaluation (M&E), risk management, and quantitative data modeling.",
+      aboutText2: "I support executive management, banking institutions, and major international development partners (GIZ, USAID, AFD, Oxfam, MEDA) in organizational structuring, compliance governance, and strategic decision support.",
       aboutCard2Title: "Key Strengths & Value Added",
-      val1: "Institutional performance systems & executive KPI steering",
-      val2: "End-to-end M&E system architecture & rigorous impact evaluations",
-      val3: "Operational and financial risk management, banking compliance, and permanent controls",
-      val4: "Advanced statistical modeling, executive Business Intelligence (Power BI), and modern AI tools",
-
-      // Formation & Certifications
+      val1: "Institutional performance steering systems & Executive KPI frameworks",
+      val2: "End-to-end monitoring and evaluation architectures & impact assessments",
+      val3: "Operational & financial risk management, banking compliance, and permanent internal control",
+      val4: "Advanced statistical modeling, Business Intelligence (Power BI), and AI integration",
       eduTag: "Academic Background & Credentials",
       eduTitle: "Education & Certifications",
-      eduDesc: "Academic excellence in econometrics, finance, and data analytics complemented by international certifications",
+      eduDesc: "University degrees in applied economics and international professional certifications",
       eduUniSectionTitle: "University Education",
-      eduM2Title: "Master 2 - Applied Econometrics",
-      eduM2Level: "5-Year Higher Degree (MSc Equivalent)",
-      eduM2School: "UADB - Alioune Diop University of Bambey",
-      eduM2Subtitle: "Specialization: Monitoring & Evaluation, Econometric Modeling & Public Policy Analysis",
-      eduM2Desc: "Advanced curriculum focused on multivariate statistical modeling, time-series econometrics, rigorous impact evaluation methods, development economics, and strategic project management.",
+      eduM2Level: "Bac +5 (MSc)",
+      eduM2Title: "Master 2 in Applied Econometrics",
+      eduM2Subtitle: "Development Economics",
+      eduM2School: "Alioune Diop University of Bambey (UADB)",
+      eduM2Desc: "Advanced econometric modeling, public policy evaluation, and quantitative impact analysis.",
       tagEconometrics: "Econometrics",
-      tagStats: "Advanced Statistics",
-      tagImpact: "Impact Evaluation",
-      tagPublicPolicy: "Public Policy",
+      tagStats: "Statistics",
+      tagImpact: "Impact Analysis",
       tagProjectMgmt: "Project Management",
-      eduLicenceTitle: "Bachelor's Degree - Economics & Management",
-      eduLicenceLevel: "3-Year Degree (BSc Equivalent)",
-      eduLicenceSchool: "UADB - Alioune Diop University of Bambey",
-      eduLicenceSubtitle: "Major: Applied Economics & Quantitative Analysis",
-      eduLicenceDesc: "Strong theoretical foundations in microeconomics, macroeconomics, probability, inferential statistics, financial mathematics, budgetary analysis, and managerial accounting.",
-      tagMicro: "Microeconomics",
+      eduLicenceLevel: "Bac +3 (BSc)",
+      eduLicenceTitle: "Bachelor in Applied Economics",
+      eduLicenceSubtitle: "Economic Analysis & Policy",
+      eduLicenceSchool: "Alioune Diop University of Bambey (UADB)",
+      eduLicenceDesc: "Theoretical and quantitative foundations in economic analysis, macroeconomics, and statistical methods.",
       tagMacro: "Macroeconomics",
-      eduCertSectionTitle: "International Certifications & Specializations",
-      cert1Title: "Financial Analyst",
-      cert1Issuer: "Banking Training Institute • Dakar",
-      cert1Desc: "Comprehensive financial statement analysis, profitability diagnostics, business valuation, and balance-sheet modeling.",
-      cert2Title: "Financial & Operational Risk Assessment",
-      cert2Issuer: "AFGES • French Banking Training Academy",
-      cert2Desc: "Operational risk mapping, Basel II/III prudential banking regulations, and internal banking control architectures.",
-      cert3Title: "Internal Audit & Regulatory Compliance",
-      cert3Issuer: "IFACI / International Audit Firm",
-      cert3Desc: "Internal audit methodology, AML-CFT compliance, institutional governance, and delegation framework management.",
-      cert4Title: "Power BI & Business Intelligence Specialization",
-      cert4Issuer: "Microsoft / DataCamp Professional Certification",
-      cert4Desc: "Advanced DAX modeling, automated Power Query data pipelines, and executive strategic decision dashboards.",
-      cert5Title: "Statistics & Econometric Modeling with Stata & R",
-      cert5Issuer: "DataCamp / Higher Education Academic Program",
-      cert5Desc: "Survey microdata processing, multivariate regressions, panel data econometrics, and publication-ready visualizations.",
-      cert6Title: "Artificial Intelligence & Automated Data Analytics",
-      cert6Issuer: "Data & AI Specialized Certification",
-      cert6Desc: "Prompt engineering for quantitative analysts, analytical workflow automation, and predictive AI model integration.",
+      tagMicro: "Microeconomics",
+      tagPublicPolicy: "Public Policy",
+      eduCertSectionTitle: "Certifications & Professional Credentials",
+      cert1Badge: "AFD",
+      cert1Title: "Monitoring & Evaluation of Development Projects",
+      cert1Issuer: "French Development Agency (AFD)",
+      cert1Desc: "Logical frameworks, performance indicators, data collection and analysis for international development projects.",
+      cert2Title: "MEAL in Emergency Contexts",
+      cert2Issuer: "Save the Children International",
+      cert2Desc: "Monitoring, Evaluation, Accountability, and Learning (MEAL) in humanitarian and crisis settings.",
+      cert3Badge: "WAMU",
+      cert3Title: "WAMU Banking Accounting",
+      cert3Issuer: "West African Monetary Union (WAMU)",
+      cert3Desc: "Prudential regulation, banking accounting standards, market operations, and internal control in the WAMU zone.",
+      cert4Title: "Microsoft Power BI",
+      cert4Issuer: "Microsoft - Data Analytics",
+      cert4Desc: "Data Modeling, DAX, Power Query, interactive executive dashboards, and strategic decision reporting.",
+      cert5Title: "Fundamentals of Project Management",
+      cert5Issuer: "Planning & Management",
+      cert5Desc: "Project methodologies, WBS, Gantt scheduling, budget steering, risk management, and project reporting.",
+      cert6Title: "Applied Artificial Intelligence",
+      cert6Issuer: "Applications & Prompt Engineering",
+      cert6Desc: "Generative AI tools, prompt engineering, intelligent automation, and AI integration into decision-making workflows.",
       langSectionTitle: "Working Languages",
-      langSectionDesc: "Proven ability to conduct international missions, lead executive committees, and author technical reports",
+      langSectionDesc: "Fluency across national and international settings",
       langFr: "French",
-      langFrLevel: "Native / professional bilingual (institutional reports, strategic steering committees, ministerial presentations)",
+      langFrLevel: "Native language - Fluent",
       langEn: "English",
-      langEnLevel: "Professional working proficiency (project synthesis, technical reporting, donor relations & international audits)",
-
-      // Expériences Professionnelles
-      expTag: "Career Path",
+      langEnLevel: "Professional proficiency - B2/C1",
+      expTag: "Professional Career",
       expTitle: "Professional Experience",
-      expDesc: "Proven track record in public development agencies, premier banking groups, and international consulting firms",
-      exp1Role: "Head of Monitoring & Evaluation (M&E)",
-      exp1Company: "APROSI - Industrial Parks Development & Promotion Agency (Dakar)",
-      exp1Date: "Feb. 2025 - Present",
-      exp1Ach1: "Design and deployment of the agency's overall institutional monitoring & evaluation architecture",
-      exp1Ach2: "Creation of executive Power BI strategic steering dashboards for the Director General",
-      exp1Ach3: "Definition, tracking, and econometric analysis of performance indicators (KPIs) for industrial zones",
-      exp1Ach4: "Cross-departmental activity data consolidation across all technical and operational directorates",
-      exp1Ach5: "Production of quarterly institutional performance reports and executive decision memos",
-      exp2Role: "Monitoring & Evaluation and Data Analytics Consultant",
-      exp2Company: "Maarifa Consulting (Dakar)",
-      exp2Date: "Mar. 2023 - Feb. 2025",
-      exp2Ach1: "Conducted evaluations and field surveys for international donors (GIZ, USAID, Counterpart International, Oxfam, Speak Up Africa, MEDA, Teranga Capital)",
-      exp2Ach2: "Built tailored monitoring & evaluation systems adapted to complex multi-stakeholder programs",
-      exp2Ach3: "Carried out large-scale quantitative and qualitative data collection, cleaning, and statistical modeling",
-      exp3Role: "Market Operations & Risk Control Officer",
-      exp3Company: "Afrika Bank (formerly Banque de Dakar - BDK, Dakar)",
-      exp3Date: "Nov. 2021 - Mar. 2023",
-      exp3Ach1: "Permanent internal control of treasury, foreign exchange, and securities operations under WAMU/UMOA banking regulations",
-      exp3Ach2: "Monitored financial exposure limits (counterparty, liquidity, interest rates) and authored prudential regulatory reports",
-      exp3Ach3: "Identified operational anomalies and formulated actionable risk mitigation recommendations to secure processes",
-      exp3Ach4: "Contributed to banking compliance audits, internal control missions, and market desk risk governance",
-      exp4Role: "Financial & Credit Risk Analyst (Internship)",
-      exp4Company: "Regional Banking Group / Financial Institution (Dakar)",
-      exp4Date: "Jan. 2021 - Oct. 2021",
-      exp4Ach1: "Corporate credit risk assessments, financial statements appraisal, and solvency diagnostics",
-      exp4Ach2: "Participated in quarterly counterparty portfolio reviews and monitored commercial lending commitments",
-
-      // Domaines de Compétences
-      skillsTag: "Core Toolset & Know-How",
-      skillsTitle: "Core Competency Domains",
-      skillsDesc: "A unique balance of high-level institutional strategic vision and hands-on operational mastery of modern data tools",
-      cat1Title: "Strategic Steering & Institutional Governance",
-      cat1Skill1: "Institutional performance & KPI steering",
-      cat1Skill2: "Executive Director General dashboards",
-      cat1Skill3: "Strategic & multi-year operational planning",
-      cat1Skill4: "Cross-functional institutional coordination",
-      cat2Title: "Monitoring, Evaluation & Impact",
-      cat2Skill1: "End-to-end M&E system architecture",
-      cat2Skill2: "Rigorous impact evaluation methodologies",
-      cat2Skill3: "Field surveys & digital data collection",
-      cat2Skill4: "International donor reporting standards",
-      cat3Title: "Risks, Banking Compliance & Control",
-      cat3Skill1: "Permanent control & operational auditing",
-      cat3Skill2: "Risk mapping & compliance monitoring",
-      cat3Skill3: "Prudential banking regulatory framework",
-      cat3Skill4: "Standard operating procedures & governance",
-      cat4Title: "Data Analytics & Business Intelligence",
-      cat4Skill1: "Power BI (Advanced DAX, Power Query, Datamarts)",
-      cat4Skill2: "Stata (Econometrics, Panel Data, Micro-surveys)",
-      cat4Skill3: "R (Data Modeling, ggplot2, tidyverse)",
-      cat4Skill4: "KoboToolbox & ODK (Digital Data Collection)",
-      cat5Title: "Econometrics & Quantitative Modeling",
-      cat5Val1: "Applied econometrics, time series & panel regressions",
-      cat5Val2: "Multivariate regression analyses & statistical simulations",
-      cat6Title: "Applied Artificial Intelligence",
-      cat6Val1: "AI tools integration for analytical workflows",
-      cat6Val2: "Automated report generation & augmented insights",
-
-      // Réalisations et Outils de Pilotage
-      projectsTag: "Executive Systems",
-      projectsTitle: "Key Systems & Strategic Tools",
-      projectsDesc: "Explore the executive decision-support systems and analytical frameworks designed and deployed throughout my career",
-      proj1Badge: "Executive Leadership & APROSI",
-      proj1Title: "Comprehensive M&E System & Strategic KPI Architecture",
-      proj1Desc: "Full design of the institutional M&E framework and deployment of automated Power BI executive dashboards to monitor industrial park developments in Senegal.",
-      proj1Status: "In Production • Active Deployment",
-      proj2Badge: "GIZ • USAID • Oxfam • Speak Up Africa",
-      proj2Title: "Program M&E Systems & International Donor Evaluations",
-      proj2Company: "Maarifa Consulting • International Donors",
-      proj2Desc: "Executed extensive field surveys, rigorous econometric data modeling with Stata & R, and authored high-impact donor evaluation reports.",
-      proj3Badge: "Banking Sector • WAMU / UMOA",
-      proj3Title: "Permanent Internal Control & Market Risk Monitoring System",
-      proj3Company: "Afrika Bank (formerly Banque de Dakar - BDK)",
-      proj3Desc: "Daily surveillance of treasury and forex market operations, regulatory compliance audits, and financial flow risk mitigation.",
+      expDesc: "Proven track record within public institutions, leading commercial banks, and international advisory firms",
+      exp1Role: "Division Head / Head of Monitoring & Evaluation",
+      exp1Company: "APROSI (Agency for Industrial Development & Promotion)",
+      exp1Date: "2022 - Present",
+      exp1Ach1: "Supervision of the agency-wide M&E framework and reporting to Executive Management",
+      exp1Ach2: "Formulation of action plans and strategic performance dashboards",
+      exp1Ach3: "Definition, tracking, and validation of key performance indicators (KPIs)",
+      exp1Ach4: "Coordination of operational directorates and facilitation of performance review committees",
+      exp1Ach5: "Modernization of decision-support tools and integration of Power BI executive dashboards",
+      exp2Role: "Statistical Consultant / M&E Specialist",
+      exp2Company: "Maarifa Consulting",
+      exp2Date: "2020 - 2024",
+      exp2Ach1: "Conducting evaluations and surveys for major donors (GIZ, USAID, Oxfam, Speak Up Africa, MEDA, Teranga Capital, etc.)",
+      exp2Ach2: "Design and implementation of tailored project monitoring and evaluation systems",
+      exp2Ach3: "Collection, processing, and analysis of quantitative and qualitative microdata",
+      exp3Role: "Assistant Directorate of Risk, Compliance & Permanent Control",
+      exp3Company: "Afrika Bank (formerly BDK)",
+      exp3Date: "2020 - 2022",
+      exp3Ach1: "Permanent control of money market desk operations and banking transactions",
+      exp3Ach2: "Management, mapping, and continuous surveillance of operational and financial risks",
+      exp3Ach3: "Preparation of prudential regulatory reporting and reinforcement of internal controls",
+      exp3Ach4: "Active contribution to corporate governance and institutional compliance under WAMU banking standards",
+      exp4Role: "Internship at Orabank - Corporate Banking Division",
+      exp4Company: "Orabank",
+      exp4Date: "Oct-Nov 2018",
+      exp4Ach1: "Customer satisfaction surveys, corporate questionnaires, and IPO operations support",
+      exp4Ach2: "Processing banking transactions on Sopra Banking Amplitude core banking system",
+      skillsTag: "Toolkit & Core Expertise",
+      skillsTitle: "Core Competencies",
+      skillsDesc: "Structured expertise in strategic steering, M&E, risk governance, data analytics, and AI",
+      cat1Title: "Strategic Steering & Performance",
+      cat1Skill1: "Definition and tracking of strategic KPIs",
+      cat1Skill2: "Executive dashboards & decision reporting",
+      cat1Skill3: "Results-Based Management (RBM)",
+      cat1Skill4: "Organizational performance analysis",
+      cat2Title: "Monitoring & Evaluation & Projects",
+      cat2Skill1: "Impact evaluation",
+      cat2Skill2: "Multi-stakeholder project monitoring",
+      cat2Skill3: "Institutional coordination & decision support",
+      cat2Skill4: "Strategic project management",
+      cat3Title: "Finance, Risk & Governance",
+      cat3Skill1: "Operational risk control",
+      cat3Skill2: "Compliance & permanent internal control",
+      cat3Skill3: "Financial & operational analysis",
+      cat3Skill4: "Prudential regulatory reporting (WAMU)",
+      cat4Title: "Data, Statistics & Tools",
+      cat4Skill1: "Power BI (DAX Modeling & Dashboards)",
+      cat4Skill2: "Stata, R, SPSS, SAS",
+      cat4Skill3: "Advanced econometrics & statistics",
+      cat4Skill4: "GIS (QGIS) & MS Project",
+      cat5Title: "Organizational & Digital Transformation",
+      cat5Val1: "Change management and process optimization",
+      cat5Val2: "Establishing data-driven organizations",
+      cat6Title: "AI - Artificial Intelligence",
+      cat6Val1: "Prompt engineering and analytical workflow integration",
+      cat6Val2: "Digital support tools and automated decision-making",
+      projectsTag: "Decision Systems",
+      projectsTitle: "Key Achievements & Steering Tools",
+      projectsDesc: "Operational systems designed for Executive Leadership and international development partners",
+      proj1Badge: "Institutional Steering & Leadership",
+      proj1Title: "Institutional Performance & KPI System",
+      proj1Desc: "Design and leadership of the overall performance framework: strategic KPI definition, multi-directorate data consolidation, and executive Power BI dashboards for General Management.",
+      proj1Status: "APROSI • In Production",
       btnViewCase: "Details",
-
-      // Contact & Coordonnées
+      proj2Badge: "GIZ • USAID • Oxfam • Teranga",
+      proj2Title: "Donor Performance Evaluations & Surveys",
+      proj2Desc: "Execution of multisectoral evaluations and performance surveys for international donors: methodological framing, quantitative data analysis, and strategic decision support.",
+      proj2Company: "Maarifa Consulting",
+      proj3Badge: "Banking Sector • BDK",
+      proj3Title: "Operations Control & Risk Management",
+      proj3Desc: "Surveillance of market desk operations, operational and financial risk mitigation, preparation of prudential reporting, and permanent internal control compliant with WAMU standards.",
+      proj3Company: "Afrika Bank (formerly BDK)",
+      projPillKpi: "Strategic KPIs",
+      projPillExec: "Executive Reporting",
+      projPillRbm: "Results-Based Management",
+      projPillSurveys: "Field Surveys",
+      projPillDonors: "Donor Reporting",
+      projPillRisk: "Operational Risks",
+      projPillUmoa: "WAMU Compliance",
+      projPillPerm: "Permanent Control",
+      projPillBank: "Bank Reporting",
       contactTag: "Contact & Availability",
-      contactTitle: "Let's Work Together",
-      contactDesc: "Available to discuss strategic leadership roles, monitoring & evaluation frameworks, data analytics consultancies, or digital transformation initiatives.",
+      contactTitle: "Get In Touch",
+      contactDesc: "Available to discuss your strategic steering projects, monitoring and evaluation frameworks, quantitative data missions, and digital transformation.",
       labelLocation: "Location",
-      valLocation: "Dakar, Senegal (International Mobility)",
-      labelPhone: "Phone",
-      labelPhone2: "Direct Line",
-      labelEmail: "Direct Email",
-      labelProfiles: "Professional Profiles",
-      valLinkedIn: "Verified Profile: Boubacar NDIR",
-      formName: "Full Name / Organization",
-      formEmail: "Email Address",
+      valLocation: "Dakar, Senegal",
+      labelPhone: "Primary Phone",
+      labelPhone2: "Secondary Phone",
+      labelEmail: "Official Email",
+      labelProfiles: "Professional LinkedIn",
+      valLinkedIn: "Boubacar NDIR Profile",
+      formName: "Your Full Name / Organization",
+      formEmail: "Your Email Address",
       formMessage: "Your Message or Opportunity",
-      placeholderName: "E.g.: John Doe - Executive Director / International Donor",
-      placeholderEmail: "E.g.: contact@organization.org",
-      placeholderMessage: "Describe your project, monitoring & evaluation needs, or strategic opportunity...",
       btnSend: "Send Message",
-
-      // Footer
-      footerRights: "© 2026 Boubacar NDIR - Strategic Steering, Data Analytics & AI Specialist - All Rights Reserved",
-
-      // Modal Headers
-      modalChallengeLabel: "Institutional Framework & Context",
-      modalSolutionLabel: "System Architecture & Implemented Actions",
-      modalImpactLabel: "Impact & Tangible Value Added",
+      footerRights: "© 2026 Boubacar NDIR - Strategic Steering, Data Analytics & AI Specialist - All rights reserved",
+      modalChallengeLabel: "Context & Institutional Framework",
+      modalSolutionLabel: "Implementation & Core Actions",
+      modalImpactLabel: "Impact & Added Value",
       modalToolsLabel: "Tools & Mobilized Competencies",
-
-      // Toasts
-      toastCopied: "Email address (boubacarndir7@gmail.com) copied to clipboard!",
-      toastOpeningMail: "Opening your email client..."
+      placeholderName: "E.g.: Executive Management / Partner Organization",
+      placeholderEmail: "contact@organization.com",
+      placeholderMessage: "Describe your project, your M&E requirements, or your strategic opportunity...",
+      toastCopied: "Email copied to clipboard!",
+      toastOpeningMail: "Opening your email client...",
+      toastSaved: "Changes saved locally!",
     },
-
     zh: {
-      // Navigation
-      navAbout: "个人简介",
-      navEducation: "教育与专业认证",
-      navExperience: "工作经历",
-      navSkills: "核心专业技能",
-      navProjects: "决策系统与工具",
+      navAbout: "个人概况",
+      navEducation: "教育与认证",
+      navExperience: "职业履历",
+      navSkills: "核心技能",
+      navProjects: "系统与工具",
       navContact: "联系方式",
       btnDownloadPdf: "下载简历",
-
-      // Hero
       heroStatus: "监控与评估负责人 @ APROSI • 数据与人工智能专家",
       heroTitleRole: "战略规划、数据分析与人工智能专家",
-      heroSubtitle: "精通战略规划、监控与评估（M&E）、风险管理及决策支持系统。具备在跨行业和国际多元环境中统筹、优化复杂机构的卓越能力。",
+      heroSubtitle: "深耕战略规划、监控与评估（M&E）、风险管理及高管决策支持系统。具备在跨行业和国际多元环境中统筹、优化复杂机构的卓越专业能力。",
       ctaDownloadCv: "下载个人简历 (PDF)",
       ctaContact: "立即联系我",
       metricM2Val: "硕士 (Bac+5)",
@@ -429,183 +406,178 @@ document.addEventListener('DOMContentLoaded', () => {
       metricData: "Power BI • Stata • R",
       badgeKpi: "战略KPI管理与高管决策看板",
       avatarBadge: "监控评估 (M&E) 与人工智能",
-
-      // Profil & Vision
       aboutTag: "个人概况与愿景",
       aboutTitle: "跨领域、严谨务实的综合专业实力",
       aboutDesc: "从高层机构战略规划、严谨统计分析到前沿人工智能的深度融合",
       aboutCard1Title: "专业综述",
-      aboutText1: "专注于机构绩效评估、监控与评估体系（M&E）、操作与金融风险管理及计量数据建模的高级专家。",
-      aboutText2: "深度赋能高管决策层、商业银行机构以及国际发展援助组织（GIZ、USAID、Oxfam、MEDA等），提供机构重塑、合规治理与战略决策支持。",
+      aboutText1: "专注于机构绩效评估、监控与评估体系（M&E）、风险管理及定量数据建模的高级专家。",
+      aboutText2: "深度赋能高管决策层、商业银行机构以及国际发展援助组织（GIZ、USAID、AFD、Oxfam、MEDA等），提供机构重塑、合规治理与战略决策支持。",
       aboutCard2Title: "核心优势与业务赋能",
       val1: "机构绩效管理体系建设与高管核心KPI指标监控",
       val2: "端到端监控与评估（M&E）体系构建与严谨影响评估",
       val3: "操作与金融风险管理、银行常态化内控与合规审计",
       val4: "高级统计建模、商业智能（Power BI）与现代AI分析工具",
-
-      // Formation & Certifications
       eduTag: "学术历程与专业资质",
       eduTitle: "教育与专业认证",
-      eduDesc: "计量经济学、金融与数据分析领域的深厚学术底蕴，兼备多项权威国际专业认证",
+      eduDesc: "应用经济学高等学位及国际权威专业认证",
       eduUniSectionTitle: "大学高等教育",
+      eduM2Level: "硕士学位 (Bac +5)",
       eduM2Title: "应用计量经济学硕士 (Master 2)",
-      eduM2Level: "五年制研究生学历 (Bac+5)",
-      eduM2School: "UADB - 阿里乌恩·迪奥普大学 (班贝)",
-      eduM2Subtitle: "专业方向：项目监控与评估、计量经济建模与公共政策分析",
-      eduM2Desc: "高水平学术培养，深入掌握高级多元统计建模、时间序列计量经济学、微观计量影响评估方法、发展经济学以及战略项目管理。",
+      eduM2Subtitle: "发展经济学方向",
+      eduM2School: "阿里乌恩·迪奥普大学 (UADB)",
+      eduM2Desc: "高级计量经济学建模、公共政策评估与定量影响评估分析。",
       tagEconometrics: "计量经济学",
-      tagStats: "高级统计学",
+      tagStats: "统计学",
       tagImpact: "影响评估",
-      tagPublicPolicy: "公共政策",
       tagProjectMgmt: "项目管理",
-      eduLicenceTitle: "经济学与管理学学士 (Licence)",
-      eduLicenceLevel: "三年制本科学历 (Bac+3)",
-      eduLicenceSchool: "UADB - 阿里乌恩·迪奥普大学 (班贝)",
-      eduLicenceSubtitle: "专业方向：应用经济学与定量分析",
-      eduLicenceDesc: "扎实的理论与定量基础，涵盖微观经济学、宏观经济学、概率论与推断统计、金融数学、预算分析与管理会计。",
-      tagMicro: "微观经济学",
+      eduLicenceLevel: "学士学位 (Bac +3)",
+      eduLicenceTitle: "应用经济学学士 (Licence)",
+      eduLicenceSubtitle: "经济分析与经济政策",
+      eduLicenceSchool: "阿里乌恩·迪奥普大学 (UADB)",
+      eduLicenceDesc: "经济分析、宏观经济学及统计学方法的深厚理论与定量基础。",
       tagMacro: "宏观经济学",
-      eduCertSectionTitle: "国际专业认证与专题进修",
-      cert1Title: "金融分析师专业认证",
-      cert1Issuer: "银行培训学院 • 达喀尔",
-      cert1Desc: "深入财务报表分析、盈利能力诊断、企业估值建模与资产负债管理。",
-      cert2Title: "金融与操作风险评估认证",
-      cert2Issuer: "AFGES • 法国银行培训学院",
-      cert2Desc: "操作风险地图编制、巴塞尔协议 II/III 审慎监管准则与银行内部控制体系。",
-      cert3Title: "内部审计与法规合规认证",
-      cert3Issuer: "IFACI / 国际权威审计机构",
-      cert3Desc: "内部审计工作方法论、反洗钱与反恐融资 (AML-CFT) 合规、机构治理及授权机制管理。",
-      cert4Title: "Power BI 与商业智能 (BI) 专业进修",
-      cert4Issuer: "微软 (Microsoft) / DataCamp 官方认证",
-      cert4Desc: "高级 DAX 复杂建模、自动化 Power Query 数据清洗管线及高管战略决策仪表板构建。",
-      cert5Title: "Stata 与 R 语言高级统计与计量建模",
-      cert5Issuer: "DataCamp / 高等教育学术培养项目",
-      cert5Desc: "调查微观数据清洗与处理、高级回归模型、面板数据计量分析及高质量学术图表呈现。",
-      cert6Title: "人工智能 (AI) 与数据自动化应用",
-      cert6Issuer: "数据与人工智能专题研修认证",
-      cert6Desc: "面向数据分析师的提示工程 (Prompt Engineering)、分析工作流自动化及预测性AI模型整合。",
+      tagMicro: "微观经济学",
+      tagPublicPolicy: "公共政策",
+      eduCertSectionTitle: "专业认证与资质证书",
+      cert1Badge: "AFD",
+      cert1Title: "发展项目监控与评估",
+      cert1Issuer: "法国开发署 (AFD)",
+      cert1Desc: "逻辑框架设计、绩效指标体系、国际发展项目数据采集与分析方法。",
+      cert2Title: "紧急人道主义背景下的MEAL框架",
+      cert2Issuer: "国际救助儿童会 (Save the Children)",
+      cert2Desc: "监控、评估、问责与学习（MEAL）在人道主义紧急救援情境下的系统应用。",
+      cert3Badge: "UMOA",
+      cert3Title: "西非货币联盟银行会计（UMOA）",
+      cert3Issuer: "西非货币联盟 (UMOA)",
+      cert3Desc: "审慎监管准则、银行会计标准规范、金融市场交易及UMOA区域内部控制体系。",
+      cert4Title: "Microsoft Power BI",
+      cert4Issuer: "微软 (Microsoft) - 数据分析",
+      cert4Desc: "数据建模、DAX、Power Query，设计高管层交互式战略决策仪表板与数据报告。",
+      cert5Title: "项目管理基础与核心技能",
+      cert5Issuer: "规划与项目管理",
+      cert5Desc: "项目管理方法论、工作分解结构（WBS）、甘特图规划、预算管控、风险管理与项目汇报。",
+      cert6Title: "人工智能 (AI) 实务应用",
+      cert6Issuer: "AI应用与提示工程",
+      cert6Desc: "生成式AI工具应用、提示工程（Prompt Engineering）、智能化流程自动化及AI集成决策支持。",
       langSectionTitle: "工作语言能力",
-      langSectionDesc: "具备主导国际化任务、主持高管战略委员会及撰写高规格技术备忘录的语言能力",
+      langSectionDesc: "熟练胜任国家级与国际化多元工作环境",
       langFr: "法语",
-      langFrLevel: "母语级 / 专业双语（精通撰写高规格官方报告、主持战略董事会与部委汇报）",
+      langFrLevel: "母语水平 - 流利精通",
       langEn: "英语",
-      langEnLevel: "专业工作水准（熟练撰写项目评估全英文报告、对接国际大型多边援助机构）",
-
-      // Expériences Professionnelles
-      expTag: "职业发展历程",
-      expTitle: "专业工作经历",
-      expDesc: "在国家级公共开发机构、领先商业银行集团及国际咨询机构积累了深厚的实务管理经验",
-      exp1Role: "监控与评估负责人 (Responsable S&E)",
-      exp1Company: "APROSI - 塞内加尔工业园区建设与促进局 (达喀尔)",
-      exp1Date: "2025年2月 - 至今",
-      exp1Ach1: "全面负责全局性监控与评估（M&E）制度的框架设计与落地推行",
-      exp1Ach2: "基于 Power BI 为最高管理层构建全自动化机构战略决策看板",
-      exp1Ach3: "制定、监控并计量分析各工业园区与经济特区的核心绩效指标 (KPI)",
-      exp1Ach4: "统筹协调局内各业务部门开展常态化业务数据采集、清洗与汇总",
-      exp1Ach5: "撰写定期机构绩效评估报告并为局长提供关键战略决策支持备忘录",
-      exp2Role: "监控与评估及数据分析顾问",
-      exp2Company: "Maarifa Consulting 咨询公司 (达喀尔)",
-      exp2Date: "2023年3月 - 2025年2月",
-      exp2Ach1: "为主流国际出资机构（GIZ、USAID、Counterpart International、Oxfam、Speak Up Africa、MEDA、Teranga Capital）执行多项大型项目评估与实地调研",
-      exp2Ach2: "为复杂多利益相关方发展项目定制构建全套监控与评估（M&E）体系",
-      exp2Ach3: "高效开展大规模定量与定性调查数据采集、清洗、统计分析与计量建模",
-      exp3Role: "金融市场交易内控与风险管理专员",
-      exp3Company: "Afrika Bank 商业银行 (原达喀尔银行 - BDK, 达喀尔)",
-      exp3Date: "2021年11月 - 2023年3月",
-      exp3Ach1: "对资金营运、外汇及证券交易实施常态化内控，严格保障西非货币联盟（UMOA）银行法规合规",
-      exp3Ach2: "实时监控金融交易风险限额（交易对手、流动性、利率风险）并编制审慎监管报告",
-      exp3Ach3: "排查操作风险异常，针对业务痛点提出切实可行的内控优化与流程加固建议",
-      exp3Ach4: "全程参与金融市场业务合规审查、常态化内部审计以及操作风险治理",
-      exp4Role: "金融与信贷风险分析师 (实习)",
-      exp4Company: "西非区域商业银行 / 金融机构 (达喀尔)",
-      exp4Date: "2021年1月 - 2021年10月",
-      exp4Ach1: "对企业信贷申请进行深度财务报表分析、偿债能力评估与信用评级",
-      exp4Ach2: "参与交易对手资产组合的定期合规审查，动态跟踪商业授信业务风险敞口",
-
-      // Domaines de Compétences
-      skillsTag: "专业技能工具箱",
-      skillsTitle: "核心能力领域",
-      skillsDesc: "融合高水准机构宏观战略思维与现代数据工具的扎实操作能力",
-      cat1Title: "战略规划与机构治理",
-      cat1Skill1: "机构绩效管理与战略KPI指标",
-      cat1Skill2: "最高管理层决策仪表板架构",
-      cat1Skill3: "战略与多年期运营规划统筹",
-      cat1Skill4: "跨部门与机构多利益方协同",
-      cat2Title: "监控评估 (M&E) 与影响评估",
-      cat2Skill1: "端到端监控与评估完整体系",
-      cat2Skill2: "严谨科学的项目影响评估方法",
-      cat2Skill3: "实地调研设计与数字化移动采集",
-      cat2Skill4: "符合国际出资方标准的专业报告",
-      cat3Title: "风险管理、合规与内控",
-      cat3Skill1: "常态化内部控制与运营业务审计",
-      cat3Skill2: "风险地图绘制与法规合规监管",
-      cat3Skill3: "银行审慎监管准则与风险指标",
-      cat3Skill4: "作业流程规范治理与内控加固",
-      cat4Title: "数据分析与商业智能 (BI)",
-      cat4Skill1: "Power BI (高级DAX、Power Query、数据建模)",
-      cat4Skill2: "Stata (计量分析、面板数据、微观调查)",
-      cat4Skill3: "R 语言 (统计建模、ggplot2、tidyverse)",
-      cat4Skill4: "KoboToolbox 与 ODK (数字化数据采集)",
-      cat5Title: "计量经济学与定量建模",
-      cat5Val1: "应用计量经济学、时间序列与面板数据模型",
-      cat5Val2: "多元回归推断分析与经济预测模拟",
-      cat6Title: "人工智能 (AI) 行业应用",
-      cat6Val1: "AI工具与分析工作流的深度整合应用",
-      cat6Val2: "数据洞察自动化提炼与智能报告生成",
-
-      // Réalisations et Outils de Pilotage
+      langEnLevel: "专业工作水平 - B2/C1",
+      expTag: "职业履历",
+      expTitle: "专业工作经验",
+      expDesc: "在公共机构、大型商业银行及国际咨询机构积累的卓越职业履历",
+      exp1Role: "处长 / 监控与评估负责人",
+      exp1Company: "APROSI (工业园区开发与促进局)",
+      exp1Date: "2022 - 至今",
+      exp1Ach1: "全面监督机构监控与评估体系，直接向最高管理层汇报",
+      exp1Ach2: "制定战略行动计划并构建战略绩效决策仪表板",
+      exp1Ach3: "定义、追踪并核实核心关键绩效指标 (KPI)",
+      exp1Ach4: "统筹各业务部门并主持定期的绩效评估与审议委员会",
+      exp1Ach5: "现代化升级决策支持工具，深度融合Power BI交互式高管仪表板",
+      exp2Role: "统计学顾问 / 监控与评估专员",
+      exp2Company: "Maarifa Consulting",
+      exp2Date: "2020 - 2024",
+      exp2Ach1: "主导大型国际发展出资方（GIZ、USAID、Oxfam、Speak Up Africa、MEDA、Teranga Capital等）的评估与调查项目",
+      exp2Ach2: "针对不同发展项目设计并落地适配的定制化监控与评估体系",
+      exp2Ach3: "负责定性与定量微观数据的全流程采集、清洗、处理与深入统计分析",
+      exp3Role: "风险管理、合规与常态化内控助理",
+      exp3Company: "Afrika Bank (原 BDK达喀尔银行)",
+      exp3Date: "2020 - 2022",
+      exp3Ach1: "常态化监督货币资金市场交易及日常银行业务运营",
+      exp3Ach2: "操作风险与金融风险的管理、风险地图绘制与全流程监控",
+      exp3Ach3: "编制审慎监管报告并强化银行常态化内部控制体系",
+      exp3Ach4: "积极参与企业治理及西非货币联盟（UMOA）银行机构合规建设",
+      exp4Role: "Orabank 实习 - 客户业务部",
+      exp4Company: "Orabank (奥拉银行)",
+      exp4Date: "2018年10月 - 11月",
+      exp4Ach1: "实施客户满意度调研、问卷调查及公开发行（OPV）业务支持",
+      exp4Ach2: "在 Sopra Banking Amplitude 核心银行系统下处理日常银行业务",
+      skillsTag: "专业工具箱与专长",
+      skillsTitle: "专业技能领域",
+      skillsDesc: "在战略规划、监控与评估、风险管理、数据分析与AI领域的系统专长",
+      cat1Title: "战略规划与机构绩效",
+      cat1Skill1: "战略KPI指标体系设计与追踪",
+      cat1Skill2: "高管决策仪表板与绩效报告",
+      cat1Skill3: "成果导向管理 (RBM)",
+      cat1Skill4: "组织机构绩效深入分析",
+      cat2Title: "监控与评估及项目管理",
+      cat2Skill1: "项目影响评估",
+      cat2Skill2: "多方协同项目全程监控",
+      cat2Skill3: "机构统筹协调与高管决策支持",
+      cat2Skill4: "战略级重大项目管理",
+      cat3Title: "金融、风险与机构治理",
+      cat3Skill1: "操作风险防控与管理",
+      cat3Skill2: "合规管理与常态化内部控制",
+      cat3Skill3: "财务与业务运营深度分析",
+      cat3Skill4: "西非货币联盟 (UMOA) 审慎监管报告",
+      cat4Title: "数据分析、统计学与专业工具",
+      cat4Skill1: "Power BI (DAX高级建模与仪表板)",
+      cat4Skill2: "Stata, R, SPSS, SAS",
+      cat4Skill3: "高级计量经济学与多元统计学",
+      cat4Skill4: "地理信息系统 (QGIS) 与 MS Project",
+      cat5Title: "组织变革与数字化转型",
+      cat5Val1: "变革管理与业务流程深度优化",
+      cat5Val2: "构建数据驱动型高效组织架构",
+      cat6Title: "人工智能 (AI) 实战应用",
+      cat6Val1: "提示工程 (Prompt Engineering) 与分析工作流整合",
+      cat6Val2: "数字化智能助手与决策自动化支持",
       projectsTag: "决策支持系统",
-      projectsTitle: "战略成果与管理工具",
-      projectsDesc: "深入了解在职业生涯中主导设计并落地实施的核心决策支持系统与分析模型",
-      proj1Badge: "最高管理层与 APROSI",
-      proj1Title: "全套机构级监控与评估体系及战略KPI架构",
-      proj1Desc: "完整主导方法论框架设计，基于 Power BI 部署全自动化高管战略决策仪表板，实现塞内加尔全国工业园区推进态势动态监控。",
-      proj1Status: "已投产运行 • 全面应用中",
-      proj2Badge: "GIZ • USAID • Oxfam • Speak Up Africa",
-      proj2Title: "项目监控评估体系与国际组织调研评估",
-      proj2Company: "Maarifa Consulting • 国际出资机构",
-      proj2Desc: "组织实施大规模实地调研，运用 Stata 和 R 开展深度计量统计建模，出具高质量决策咨询报告。",
-      proj3Badge: "银行业界 • 西非货币联盟 (UMOA)",
-      proj3Title: "常态化内部控制与金融市场风险监控系统",
-      proj3Company: "Afrika Bank 商业银行 (原达喀尔银行 - BDK)",
-      proj3Desc: "实时监督银行资金池与外汇市场交易，确保西非货币联盟（UMOA）法规合规，全面筑牢资金链风险防线。",
+      projectsTitle: "代表性成果与决策工具",
+      projectsDesc: "专为机构最高管理层与国际合作伙伴量身构建的实用运营系统",
+      proj1Badge: "机构战略规划与高管决策",
+      proj1Title: "机构绩效管理体系与KPI决策看板",
+      proj1Desc: "设计并统筹全机构综合绩效体系：明确战略KPI框架、汇总整合各业务部门数据，并为最高管理层构建Power BI高管决策仪表板。",
+      proj1Status: "APROSI • 稳定运行中",
       btnViewCase: "查看详情",
-
-      // Contact & Coordonnées
-      contactTag: "联系沟通与合作意向",
-      contactTitle: "期待与您携手合作",
-      contactDesc: "随时期待就机构战略规划、监控与评估体系搭建、专业数据分析咨询或数字化转型开展深入探讨。",
-      labelLocation: "常驻工作地点",
-      valLocation: "塞内加尔·达喀尔 (支持国际出差与派遣)",
-      labelPhone: "联系电话",
-      labelPhone2: "直拨联系电话",
-      labelEmail: "直接电子邮箱",
-      labelProfiles: "专业社交网络",
-      valLinkedIn: "领英 (LinkedIn) 认证主页: Boubacar NDIR",
+      proj2Badge: "GIZ • USAID • Oxfam • Teranga",
+      proj2Title: "国际出资方绩效评估与调研体系",
+      proj2Desc: "为主流国际大型发展援助机构主导实施多领域绩效评估与调查：制定方法论框架、开展定量统计分析并提供战略决策依据。",
+      proj2Company: "Maarifa Consulting",
+      proj3Badge: "银行业 • BDK",
+      proj3Title: "业务合规控制与金融风险管理",
+      proj3Desc: "金融市场资金交易日常监督、操作与金融风险防控、编制审慎监管报告，确保严格遵循西非货币联盟（UMOA）银行业监管标准。",
+      proj3Company: "Afrika Bank (原 BDK)",
+      projPillKpi: "战略KPI",
+      projPillExec: "高管报告",
+      projPillRbm: "成果导向管理",
+      projPillSurveys: "实地调研",
+      projPillDonors: "出资方报告",
+      projPillRisk: "操作风险",
+      projPillUmoa: "UMOA合规",
+      projPillPerm: "常态化内控",
+      projPillBank: "银行报告",
+      contactTag: "联系方式与合作意向",
+      contactTitle: "联系我",
+      contactDesc: "期待就战略规划、监控与评估体系搭建、定量数据分析课题及机构数字化转型等项目与您深入交流。",
+      labelLocation: "工作常驻地",
+      valLocation: "塞内加尔 • 达喀尔",
+      labelPhone: "主要联系电话",
+      labelPhone2: "备用联系电话",
+      labelEmail: "官方电子邮箱",
+      labelProfiles: "领英 (LinkedIn) 职业主页",
+      valLinkedIn: "Boubacar NDIR 个人主页",
       formName: "您的姓名 / 所属机构",
       formEmail: "您的电子邮箱",
-      formMessage: "合作意向或留言内容",
-      placeholderName: "例如：张总 - 执行总裁 / 国际机构代表",
-      placeholderEmail: "例如：contact@organization.org",
-      placeholderMessage: "请简要描述您的项目需求、监控评估咨询或战略合作意向...",
-      btnSend: "发送联络信息",
-
-      // Footer
+      formMessage: "您的留言或合作意向",
+      btnSend: "发送留言",
       footerRights: "© 2026 Boubacar NDIR - 战略规划、数据分析与人工智能专家 - 保留所有权利",
-
-      // Modal Headers
-      modalChallengeLabel: "机构背景与面临挑战",
-      modalSolutionLabel: "实施方案与执行举措",
-      modalImpactLabel: "成效产出与战略增值",
-      modalToolsLabel: "所运用工具与专业技能",
-
-      // Toasts
-      toastCopied: "电子邮箱 (boubacarndir7@gmail.com) 已成功复制到剪贴板！",
-      toastOpeningMail: "正在启动您的邮件客户端..."
+      modalChallengeLabel: "制度背景与工作框架",
+      modalSolutionLabel: "实施举措与具体行动",
+      modalImpactLabel: "实际成效与附加价值",
+      modalToolsLabel: "运用工具与核心专业能力",
+      placeholderName: "例如：机构高管层 / 国际合作伙伴",
+      placeholderEmail: "contact@organization.com",
+      placeholderMessage: "请描述您的项目需求、监控评估计划或战略合作机会...",
+      toastCopied: "电子邮箱已复制到剪贴板！",
+      toastOpeningMail: "正在打开您的邮件客户端...",
+      toastSaved: "修改已保存在本地！",
     }
   };
 
   let currentLang = 'fr';
+  let currentOpenProjectId = null;
 
   // 2. Gestion du Changement de Langue (FR / EN / 中文)
   const langPills = document.querySelectorAll('.lang-pill');
@@ -636,6 +608,21 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // Titre de page adapté
+    const titles = {
+      fr: "Boubacar NDIR | Spécialiste Pilotage Stratégique, Data Analytics & IA",
+      en: "Boubacar NDIR | Strategic Steering, Data Analytics & AI Specialist",
+      zh: "Boubacar NDIR | 战略规划、数据分析与人工智能专家"
+    };
+    if (titles[lang]) {
+      document.title = titles[lang];
+    }
+
+    // Réactualiser la modale si elle est ouverte
+    if (currentOpenProjectId && modalBackdrop && modalBackdrop.classList.contains('active')) {
+      renderModal(currentOpenProjectId);
+    }
+
     if (langToggleBtn) {
       const cycleMap = { fr: 'EN', en: '中文', zh: 'FR' };
       langToggleBtn.textContent = cycleMap[lang] || 'EN';
@@ -665,37 +652,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Cursor Spotlight Glow
+  // 4. Barre de progression du scroll
+  const scrollProgress = document.getElementById('scrollProgress');
+  window.addEventListener('scroll', () => {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (totalHeight > 0 && scrollProgress) {
+      const progress = (window.scrollY / totalHeight) * 100;
+      scrollProgress.style.width = `${progress}%`;
+    }
+  });
+
+  // 5. Spotlight Curseur
   const cursorGlow = document.querySelector('.cursor-glow');
-  if (cursorGlow && window.matchMedia('(pointer: fine)').matches) {
+  if (cursorGlow) {
     window.addEventListener('mousemove', (e) => {
       cursorGlow.style.left = `${e.clientX}px`;
       cursorGlow.style.top = `${e.clientY}px`;
     });
   }
 
-  // 5. Scroll Progress Bar
-  const scrollProgressBar = document.querySelector('.scroll-progress');
-  window.addEventListener('scroll', () => {
-    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const progress = (window.scrollY / totalHeight) * 100;
-    if (scrollProgressBar) {
-      scrollProgressBar.style.width = `${progress}%`;
-    }
-  });
-
-  // 6. Navigation Scroll Spy & Smooth Anchor
-  const sections = document.querySelectorAll('section[id]');
+  // 6. Navigation fluide et lien actif au scroll
   const navLinks = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('section[id]');
 
   window.addEventListener('scroll', () => {
     let current = '';
-    const scrollPosition = window.scrollY + 200;
+    const scrollY = window.scrollY;
 
     sections.forEach(section => {
-      const sectionTop = section.offsetTop;
+      const sectionTop = section.offsetTop - 140;
       const sectionHeight = section.offsetHeight;
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
         current = section.getAttribute('id');
       }
     });
@@ -704,8 +691,8 @@ document.addEventListener('DOMContentLoaded', () => {
       link.classList.remove('active');
       if (link.getAttribute('href') === `#${current}`) {
         link.classList.add('active');
-      }
-    });
+      }}
+    );
   });
 
   // 7. Modale Détails des Réalisations (APROSI, Maarifa, Afrika Bank) multilingue
@@ -760,7 +747,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       bankCase: {
         title: "Risk Control & Banking Compliance @ Afrika Bank (ex BDK)",
-        badge: "Banking Industry • WAMU / UMOA",
+        badge: "Banking Industry • WAMU",
         image: "assets/images/project-fintech.jpg",
         challenge: "Ensure permanent regulatory compliance with WAMU banking commission standards and mitigate operational and financial risks.",
         solution: "Continuous market desk surveillance, operational risk mapping, internal control reinforcement, and prudential regulatory reporting.",
@@ -809,29 +796,35 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalImpact = document.getElementById('modalImpact');
   const modalToolsList = document.getElementById('modalToolsList');
 
+  function renderModal(projectId) {
+    currentOpenProjectId = projectId;
+    const langDataset = caseStudiesData[currentLang] || caseStudiesData['fr'];
+    const data = langDataset[projectId];
+    if (data && modalBackdrop) {
+      modalTitle.textContent = data.title;
+      modalBadge.textContent = data.badge;
+      modalImg.src = data.image;
+      modalImg.alt = data.title;
+      modalChallenge.textContent = data.challenge;
+      modalSolution.textContent = data.solution;
+      modalImpact.textContent = data.impact;
+      
+      modalToolsList.innerHTML = '';
+      data.tools.forEach(tool => {
+        const pill = document.createElement('span');
+        pill.className = 'tech-pill';
+        pill.textContent = tool;
+        modalToolsList.appendChild(pill);
+      });
+    }
+  }
+
   document.querySelectorAll('.open-case-study').forEach(button => {
     button.addEventListener('click', (e) => {
       e.preventDefault();
       const projectId = button.getAttribute('data-project');
-      const langDataset = caseStudiesData[currentLang] || caseStudiesData['fr'];
-      const data = langDataset[projectId];
-      if (data && modalBackdrop) {
-        modalTitle.textContent = data.title;
-        modalBadge.textContent = data.badge;
-        modalImg.src = data.image;
-        modalImg.alt = data.title;
-        modalChallenge.textContent = data.challenge;
-        modalSolution.textContent = data.solution;
-        modalImpact.textContent = data.impact;
-        
-        modalToolsList.innerHTML = '';
-        data.tools.forEach(tool => {
-          const pill = document.createElement('span');
-          pill.className = 'tech-pill';
-          pill.textContent = tool;
-          modalToolsList.appendChild(pill);
-        });
-
+      renderModal(projectId);
+      if (modalBackdrop) {
         modalBackdrop.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
@@ -842,6 +835,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalBackdrop) {
       modalBackdrop.classList.remove('active');
       document.body.style.overflow = '';
+      currentOpenProjectId = null;
     }
   }
 
@@ -863,57 +857,54 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 8. Copie rapide de l'Email & Toast
-  const copyEmailBtns = document.querySelectorAll('.copy-email-btn');
-  const toastNotice = document.getElementById('toastNotice');
-  const toastText = document.getElementById('toastText');
+  // 8. Toast Notifications
+  const toastNotification = document.getElementById('toastNotification');
+  const toastMessage = document.getElementById('toastMessage');
+  let toastTimer = null;
 
   function showToast(message) {
-    if (toastNotice && toastText) {
-      toastText.textContent = message;
-      toastNotice.classList.add('show');
-      setTimeout(() => {
-        toastNotice.classList.remove('show');
-      }, 3500);
-    }
+    if (!toastNotification || !toastMessage) return;
+    toastMessage.textContent = message;
+    toastNotification.classList.add('active');
+    
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toastNotification.classList.remove('active');
+    }, 3200);
   }
 
-  copyEmailBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
+  // 9. Copie d'Email & Envoi de Formulaire
+  const copyEmailBtn = document.getElementById('copyEmailBtn');
+  if (copyEmailBtn) {
+    copyEmailBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      const email = btn.getAttribute('data-email') || 'boubacarndir7@gmail.com';
+      const email = copyEmailBtn.getAttribute('data-email') || 'boubacarndir7@gmail.com';
       navigator.clipboard.writeText(email).then(() => {
-        const msg = (translations[currentLang] && translations[currentLang].toastCopied) 
-          ? translations[currentLang].toastCopied 
-          : `Email (${email}) copié !`;
+        const msg = translations[currentLang]?.toastCopied || "Email copié dans le presse-papier !";
         showToast(msg);
       }).catch(() => {
         window.location.href = `mailto:${email}`;
       });
     });
-  });
+  }
 
-  // 9. Formulaire de contact fonctionnel
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const name = document.getElementById('contactName').value;
-      const email = document.getElementById('contactEmail').value;
-      const message = document.getElementById('contactMessage').value;
+      const name = document.getElementById('contactName').value.trim();
+      const email = document.getElementById('contactEmail').value.trim();
+      const message = document.getElementById('contactMessage').value.trim();
 
       const subject = encodeURIComponent(`Contact - ${name} via CV Web`);
       const body = encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
       
-      const toastMsg = (translations[currentLang] && translations[currentLang].toastOpeningMail) 
-        ? translations[currentLang].toastOpeningMail 
-        : "Ouverture de votre messagerie...";
+      const toastMsg = translations[currentLang]?.toastOpeningMail || "Ouverture de votre messagerie...";
       showToast(toastMsg);
 
       setTimeout(() => {
         window.location.href = `mailto:boubacarndir7@gmail.com?subject=${subject}&body=${body}`;
-        contactForm.reset();
-      }, 700);
+      }, 600);
     });
   }
 
@@ -928,38 +919,33 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = JSON.parse(savedCustomData);
       Object.keys(data).forEach(id => {
         const el = document.getElementById(id);
-        if (el) el.innerHTML = data[id];
+        if (el) {
+          el.innerHTML = data[id];
+        }
       });
     } catch (e) {
-      console.warn('Erreur lecture localStorage', e);
+      console.warn("Erreur chargement données locales:", e);
     }
   }
 
-  if (toggleEditModeBtn) {
+  if (toggleEditModeBtn && saveEditsBtn) {
     toggleEditModeBtn.addEventListener('click', () => {
       isEditMode = !isEditMode;
       document.body.classList.toggle('edit-mode-active', isEditMode);
       
-      const editableElements = document.querySelectorAll('[data-editable]');
-      editableElements.forEach(el => {
+      document.querySelectorAll('[data-editable]').forEach(el => {
         el.contentEditable = isEditMode ? 'true' : 'false';
       });
 
-      toggleEditModeBtn.textContent = isEditMode 
-        ? "Mode Édition: ACTIF" 
-        : "Modifier mes textes";
-      
-      if (saveEditsBtn) {
-        saveEditsBtn.style.display = isEditMode ? 'inline-flex' : 'none';
+      toggleEditModeBtn.textContent = isEditMode ? "Quitter Édition" : "Mode Édition";
+      toggleEditModeBtn.classList.toggle('active', isEditMode);
+      saveEditsBtn.style.display = isEditMode ? 'inline-flex' : 'none';
+
+      if (isEditMode) {
+        showToast("Mode édition activé. Modifiez directement les textes.");
       }
-
-      showToast(isEditMode 
-        ? "Mode édition activé : vous pouvez cliquer sur n'importe quel texte pour l'éditer !" 
-        : "Mode édition désactivé.");
     });
-  }
 
-  if (saveEditsBtn) {
     saveEditsBtn.addEventListener('click', () => {
       const customData = {};
       document.querySelectorAll('[data-editable]').forEach(el => {
@@ -968,7 +954,60 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
       localStorage.setItem('boubacar_ndir_official_cv_data_v2', JSON.stringify(customData));
-      showToast("Modifications enregistrées localement !");
+      const savedMsg = translations[currentLang]?.toastSaved || "Modifications enregistrées localement !";
+      showToast(savedMsg);
+    });
+  }
+
+  // 11. Carrousel Infini de Photos de Profil
+  const avatarSlides = document.querySelectorAll('.avatar-slide');
+  const avatarDots = document.querySelectorAll('.avatar-dot');
+  const avatarWrapper = document.getElementById('avatarWrapper');
+  let currentAvatarIdx = 0;
+  let avatarTimer = null;
+
+  function setAvatarSlide(index) {
+    if (!avatarSlides.length) return;
+    avatarSlides.forEach((slide, i) => {
+      slide.classList.remove('active', 'prev');
+      if (i === currentAvatarIdx && i !== index) {
+        slide.classList.add('prev');
+      }
+    });
+
+    currentAvatarIdx = (index + avatarSlides.length) % avatarSlides.length;
+    avatarSlides[currentAvatarIdx].classList.add('active');
+
+    avatarDots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentAvatarIdx);
+    });
+  }
+
+  function nextAvatar() {
+    setAvatarSlide(currentAvatarIdx + 1);
+  }
+
+  function startAvatarLoop() {
+    if (avatarTimer) clearInterval(avatarTimer);
+    avatarTimer = setInterval(nextAvatar, 3800);
+  }
+
+  if (avatarSlides.length > 1) {
+    startAvatarLoop();
+
+    if (avatarWrapper) {
+      avatarWrapper.addEventListener('click', () => {
+        nextAvatar();
+        startAvatarLoop();
+      });
+    }
+
+    avatarDots.forEach((dot, idx) => {
+      dot.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setAvatarSlide(idx);
+        startAvatarLoop();
+      });
     });
   }
 });
